@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20EACBAF1E296A3800889CED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACBAE1E296A3800889CED /* AppDelegate.swift */; };
+		20EACBB11E296A3800889CED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACBB01E296A3800889CED /* ViewController.swift */; };
+		20EACBB41E296A3800889CED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EACBB21E296A3800889CED /* Main.storyboard */; };
+		20EACBB61E296A3800889CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EACBB51E296A3800889CED /* Assets.xcassets */; };
+		20EACBB91E296A3800889CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EACBB71E296A3800889CED /* LaunchScreen.storyboard */; };
+		20EACBC41E296A3800889CED /* Booster_KiwisaverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACBC31E296A3800889CED /* Booster_KiwisaverTests.swift */; };
+		20EACBCF1E296A3800889CED /* Booster_KiwisaverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACBCE1E296A3800889CED /* Booster_KiwisaverUITests.swift */; };
+		9360FC6815BC5C022D1C0227 /* Pods_Booster_KiwisaverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8EEC4877E9DE32CC48FE90 /* Pods_Booster_KiwisaverTests.framework */; };
+		CB38F15D742085324D605A21 /* Pods_Booster_Kiwisaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F02CF4EDF0501FA5D0C1B05 /* Pods_Booster_Kiwisaver.framework */; };
+		DAABBFA6F76EACE618F0DE53 /* Pods_Booster_KiwisaverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D8EC0077EC5F6D79D1702B /* Pods_Booster_KiwisaverUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20EACBC01E296A3800889CED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20EACBA31E296A3700889CED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20EACBAA1E296A3700889CED;
+			remoteInfo = "Booster Kiwisaver";
+		};
+		20EACBCB1E296A3800889CED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20EACBA31E296A3700889CED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20EACBAA1E296A3700889CED;
+			remoteInfo = "Booster Kiwisaver";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20EACBAB1E296A3700889CED /* Booster Kiwisaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Booster Kiwisaver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EACBAE1E296A3800889CED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20EACBB01E296A3800889CED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20EACBB31E296A3800889CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20EACBB51E296A3800889CED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20EACBB81E296A3800889CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20EACBBA1E296A3800889CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20EACBBF1E296A3800889CED /* Booster KiwisaverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Booster KiwisaverTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EACBC31E296A3800889CED /* Booster_KiwisaverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booster_KiwisaverTests.swift; sourceTree = "<group>"; };
+		20EACBC51E296A3800889CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20EACBCA1E296A3800889CED /* Booster KiwisaverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Booster KiwisaverUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EACBCE1E296A3800889CED /* Booster_KiwisaverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booster_KiwisaverUITests.swift; sourceTree = "<group>"; };
+		20EACBD01E296A3800889CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2927F44E5BD900A5EAD10648 /* Pods-Booster Kiwisaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster Kiwisaver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Booster Kiwisaver/Pods-Booster Kiwisaver.debug.xcconfig"; sourceTree = "<group>"; };
+		2B053CB505A086AA175447A1 /* Pods-Booster Kiwisaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster Kiwisaver.release.xcconfig"; path = "Pods/Target Support Files/Pods-Booster Kiwisaver/Pods-Booster Kiwisaver.release.xcconfig"; sourceTree = "<group>"; };
+		3F02CF4EDF0501FA5D0C1B05 /* Pods_Booster_Kiwisaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Booster_Kiwisaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B8EEC4877E9DE32CC48FE90 /* Pods_Booster_KiwisaverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Booster_KiwisaverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99D8EC0077EC5F6D79D1702B /* Pods_Booster_KiwisaverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Booster_KiwisaverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA291477A64D141B7A17EFE2 /* Pods-Booster KiwisaverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster KiwisaverUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Booster KiwisaverUITests/Pods-Booster KiwisaverUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA2A462428AB4FAA13BD5834 /* Pods-Booster KiwisaverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster KiwisaverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Booster KiwisaverTests/Pods-Booster KiwisaverTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCEC8F6E82EF4612A0955FB4 /* Pods-Booster KiwisaverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster KiwisaverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Booster KiwisaverTests/Pods-Booster KiwisaverTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7AD5DDA4906C7FF2787ABCB /* Pods-Booster KiwisaverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster KiwisaverUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Booster KiwisaverUITests/Pods-Booster KiwisaverUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20EACBA81E296A3700889CED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB38F15D742085324D605A21 /* Pods_Booster_Kiwisaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EACBBC1E296A3800889CED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9360FC6815BC5C022D1C0227 /* Pods_Booster_KiwisaverTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EACBC71E296A3800889CED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAABBFA6F76EACE618F0DE53 /* Pods_Booster_KiwisaverUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20EACBA21E296A3700889CED = {
+			isa = PBXGroup;
+			children = (
+				20EACBAD1E296A3800889CED /* Booster Kiwisaver */,
+				20EACBC21E296A3800889CED /* Booster KiwisaverTests */,
+				20EACBCD1E296A3800889CED /* Booster KiwisaverUITests */,
+				20EACBAC1E296A3700889CED /* Products */,
+				6472FD563DAD3A953E309259 /* Pods */,
+				43FA6F5D688D6ABCF4527B3C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		20EACBAC1E296A3700889CED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20EACBAB1E296A3700889CED /* Booster Kiwisaver.app */,
+				20EACBBF1E296A3800889CED /* Booster KiwisaverTests.xctest */,
+				20EACBCA1E296A3800889CED /* Booster KiwisaverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20EACBAD1E296A3800889CED /* Booster Kiwisaver */ = {
+			isa = PBXGroup;
+			children = (
+				20EACBAE1E296A3800889CED /* AppDelegate.swift */,
+				20EACBB01E296A3800889CED /* ViewController.swift */,
+				20EACBB21E296A3800889CED /* Main.storyboard */,
+				20EACBB51E296A3800889CED /* Assets.xcassets */,
+				20EACBB71E296A3800889CED /* LaunchScreen.storyboard */,
+				20EACBBA1E296A3800889CED /* Info.plist */,
+			);
+			path = "Booster Kiwisaver";
+			sourceTree = "<group>";
+		};
+		20EACBC21E296A3800889CED /* Booster KiwisaverTests */ = {
+			isa = PBXGroup;
+			children = (
+				20EACBC31E296A3800889CED /* Booster_KiwisaverTests.swift */,
+				20EACBC51E296A3800889CED /* Info.plist */,
+			);
+			path = "Booster KiwisaverTests";
+			sourceTree = "<group>";
+		};
+		20EACBCD1E296A3800889CED /* Booster KiwisaverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20EACBCE1E296A3800889CED /* Booster_KiwisaverUITests.swift */,
+				20EACBD01E296A3800889CED /* Info.plist */,
+			);
+			path = "Booster KiwisaverUITests";
+			sourceTree = "<group>";
+		};
+		43FA6F5D688D6ABCF4527B3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F02CF4EDF0501FA5D0C1B05 /* Pods_Booster_Kiwisaver.framework */,
+				5B8EEC4877E9DE32CC48FE90 /* Pods_Booster_KiwisaverTests.framework */,
+				99D8EC0077EC5F6D79D1702B /* Pods_Booster_KiwisaverUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6472FD563DAD3A953E309259 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2927F44E5BD900A5EAD10648 /* Pods-Booster Kiwisaver.debug.xcconfig */,
+				2B053CB505A086AA175447A1 /* Pods-Booster Kiwisaver.release.xcconfig */,
+				BCEC8F6E82EF4612A0955FB4 /* Pods-Booster KiwisaverTests.debug.xcconfig */,
+				BA2A462428AB4FAA13BD5834 /* Pods-Booster KiwisaverTests.release.xcconfig */,
+				AA291477A64D141B7A17EFE2 /* Pods-Booster KiwisaverUITests.debug.xcconfig */,
+				E7AD5DDA4906C7FF2787ABCB /* Pods-Booster KiwisaverUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20EACBAA1E296A3700889CED /* Booster Kiwisaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20EACBD31E296A3800889CED /* Build configuration list for PBXNativeTarget "Booster Kiwisaver" */;
+			buildPhases = (
+				4B3D9B9BE5D0BEEE09E25C00 /* [CP] Check Pods Manifest.lock */,
+				20EACBA71E296A3700889CED /* Sources */,
+				20EACBA81E296A3700889CED /* Frameworks */,
+				20EACBA91E296A3700889CED /* Resources */,
+				A730C5AF68758CA28D3EBA4C /* [CP] Embed Pods Frameworks */,
+				37DDC79DF8313E1CD0857617 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Booster Kiwisaver";
+			productName = "Booster Kiwisaver";
+			productReference = 20EACBAB1E296A3700889CED /* Booster Kiwisaver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20EACBBE1E296A3800889CED /* Booster KiwisaverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20EACBD61E296A3800889CED /* Build configuration list for PBXNativeTarget "Booster KiwisaverTests" */;
+			buildPhases = (
+				AE2877CC835A72D92EF04F59 /* [CP] Check Pods Manifest.lock */,
+				20EACBBB1E296A3800889CED /* Sources */,
+				20EACBBC1E296A3800889CED /* Frameworks */,
+				20EACBBD1E296A3800889CED /* Resources */,
+				698C7A4C4B1344A59C8A139D /* [CP] Embed Pods Frameworks */,
+				6AD4A03D9F939DAA74A90954 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20EACBC11E296A3800889CED /* PBXTargetDependency */,
+			);
+			name = "Booster KiwisaverTests";
+			productName = "Booster KiwisaverTests";
+			productReference = 20EACBBF1E296A3800889CED /* Booster KiwisaverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20EACBC91E296A3800889CED /* Booster KiwisaverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20EACBD91E296A3800889CED /* Build configuration list for PBXNativeTarget "Booster KiwisaverUITests" */;
+			buildPhases = (
+				E6C4901DC6BA1FA59ABC679D /* [CP] Check Pods Manifest.lock */,
+				20EACBC61E296A3800889CED /* Sources */,
+				20EACBC71E296A3800889CED /* Frameworks */,
+				20EACBC81E296A3800889CED /* Resources */,
+				6639BC6440A588CA1E7BAD34 /* [CP] Embed Pods Frameworks */,
+				5245F02D03ADEA6E8821481E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20EACBCC1E296A3800889CED /* PBXTargetDependency */,
+			);
+			name = "Booster KiwisaverUITests";
+			productName = "Booster KiwisaverUITests";
+			productReference = 20EACBCA1E296A3800889CED /* Booster KiwisaverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20EACBA31E296A3700889CED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Davanti Consulting";
+				TargetAttributes = {
+					20EACBAA1E296A3700889CED = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y9SN6QP8BV;
+						ProvisioningStyle = Automatic;
+					};
+					20EACBBE1E296A3800889CED = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y9SN6QP8BV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 20EACBAA1E296A3700889CED;
+					};
+					20EACBC91E296A3800889CED = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y9SN6QP8BV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 20EACBAA1E296A3700889CED;
+					};
+				};
+			};
+			buildConfigurationList = 20EACBA61E296A3700889CED /* Build configuration list for PBXProject "Booster Kiwisaver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20EACBA21E296A3700889CED;
+			productRefGroup = 20EACBAC1E296A3700889CED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20EACBAA1E296A3700889CED /* Booster Kiwisaver */,
+				20EACBBE1E296A3800889CED /* Booster KiwisaverTests */,
+				20EACBC91E296A3800889CED /* Booster KiwisaverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20EACBA91E296A3700889CED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20EACBB91E296A3800889CED /* LaunchScreen.storyboard in Resources */,
+				20EACBB61E296A3800889CED /* Assets.xcassets in Resources */,
+				20EACBB41E296A3800889CED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EACBBD1E296A3800889CED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EACBC81E296A3800889CED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37DDC79DF8313E1CD0857617 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster Kiwisaver/Pods-Booster Kiwisaver-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B3D9B9BE5D0BEEE09E25C00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5245F02D03ADEA6E8821481E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster KiwisaverUITests/Pods-Booster KiwisaverUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6639BC6440A588CA1E7BAD34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster KiwisaverUITests/Pods-Booster KiwisaverUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		698C7A4C4B1344A59C8A139D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster KiwisaverTests/Pods-Booster KiwisaverTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AD4A03D9F939DAA74A90954 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster KiwisaverTests/Pods-Booster KiwisaverTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A730C5AF68758CA28D3EBA4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster Kiwisaver/Pods-Booster Kiwisaver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE2877CC835A72D92EF04F59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6C4901DC6BA1FA59ABC679D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20EACBA71E296A3700889CED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20EACBB11E296A3800889CED /* ViewController.swift in Sources */,
+				20EACBAF1E296A3800889CED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EACBBB1E296A3800889CED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20EACBC41E296A3800889CED /* Booster_KiwisaverTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20EACBC61E296A3800889CED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20EACBCF1E296A3800889CED /* Booster_KiwisaverUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20EACBC11E296A3800889CED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20EACBAA1E296A3700889CED /* Booster Kiwisaver */;
+			targetProxy = 20EACBC01E296A3800889CED /* PBXContainerItemProxy */;
+		};
+		20EACBCC1E296A3800889CED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20EACBAA1E296A3700889CED /* Booster Kiwisaver */;
+			targetProxy = 20EACBCB1E296A3800889CED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20EACBB21E296A3800889CED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20EACBB31E296A3800889CED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20EACBB71E296A3800889CED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20EACBB81E296A3800889CED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20EACBD11E296A3800889CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20EACBD21E296A3800889CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		20EACBD41E296A3800889CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2927F44E5BD900A5EAD10648 /* Pods-Booster Kiwisaver.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y9SN6QP8BV;
+				INFOPLIST_FILE = "Booster Kiwisaver/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "nz.co.Booster-Kiwisaver";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		20EACBD51E296A3800889CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B053CB505A086AA175447A1 /* Pods-Booster Kiwisaver.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y9SN6QP8BV;
+				INFOPLIST_FILE = "Booster Kiwisaver/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "nz.co.Booster-Kiwisaver";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		20EACBD71E296A3800889CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCEC8F6E82EF4612A0955FB4 /* Pods-Booster KiwisaverTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y9SN6QP8BV;
+				INFOPLIST_FILE = "Booster KiwisaverTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nz.co.Booster-KiwisaverTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Booster Kiwisaver.app/Booster Kiwisaver";
+			};
+			name = Debug;
+		};
+		20EACBD81E296A3800889CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA2A462428AB4FAA13BD5834 /* Pods-Booster KiwisaverTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y9SN6QP8BV;
+				INFOPLIST_FILE = "Booster KiwisaverTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nz.co.Booster-KiwisaverTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Booster Kiwisaver.app/Booster Kiwisaver";
+			};
+			name = Release;
+		};
+		20EACBDA1E296A3800889CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA291477A64D141B7A17EFE2 /* Pods-Booster KiwisaverUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Y9SN6QP8BV;
+				INFOPLIST_FILE = "Booster KiwisaverUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nz.co.Booster-KiwisaverUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Booster Kiwisaver";
+			};
+			name = Debug;
+		};
+		20EACBDB1E296A3800889CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7AD5DDA4906C7FF2787ABCB /* Pods-Booster KiwisaverUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Y9SN6QP8BV;
+				INFOPLIST_FILE = "Booster KiwisaverUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "nz.co.Booster-KiwisaverUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Booster Kiwisaver";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20EACBA61E296A3700889CED /* Build configuration list for PBXProject "Booster Kiwisaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20EACBD11E296A3800889CED /* Debug */,
+				20EACBD21E296A3800889CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20EACBD31E296A3800889CED /* Build configuration list for PBXNativeTarget "Booster Kiwisaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20EACBD41E296A3800889CED /* Debug */,
+				20EACBD51E296A3800889CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20EACBD61E296A3800889CED /* Build configuration list for PBXNativeTarget "Booster KiwisaverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20EACBD71E296A3800889CED /* Debug */,
+				20EACBD81E296A3800889CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20EACBD91E296A3800889CED /* Build configuration list for PBXNativeTarget "Booster KiwisaverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20EACBDA1E296A3800889CED /* Debug */,
+				20EACBDB1E296A3800889CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20EACBA31E296A3700889CED /* Project object */;
+}
