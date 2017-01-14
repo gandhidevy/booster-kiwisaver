@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201751FE1E2975C20005F042 /* BNZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201751FD1E2975C20005F042 /* BNZColor.swift */; };
+		201752001E29F58E0005F042 /* BNZFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201751FF1E29F58E0005F042 /* BNZFont.swift */; };
+		201752021E2A02550005F042 /* MainControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201752011E2A02550005F042 /* MainControler.swift */; };
+		209C6EFC1E2A14D700E7223E /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C6EFB1E2A14D700E7223E /* MenuController.swift */; };
+		209C6F021E2A19E800E7223E /* MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C6F011E2A19E800E7223E /* MenuTableCell.swift */; };
+		209C6F051E2A256900E7223E /* Questionnaire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209C6F041E2A256900E7223E /* Questionnaire.storyboard */; };
+		209C6F071E2A260D00E7223E /* QuestionnaireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C6F061E2A260D00E7223E /* QuestionnaireController.swift */; };
+		209C6F0A1E2A380100E7223E /* InvestorTypes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209C6F091E2A380100E7223E /* InvestorTypes.storyboard */; };
+		209C6F0D1E2A3BB600E7223E /* InvestorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C6F0C1E2A3BB600E7223E /* InvestorType.swift */; };
 		20EACBAF1E296A3800889CED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACBAE1E296A3800889CED /* AppDelegate.swift */; };
-		20EACBB11E296A3800889CED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACBB01E296A3800889CED /* ViewController.swift */; };
+		20EACBB11E296A3800889CED /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACBB01E296A3800889CED /* WelcomeController.swift */; };
 		20EACBB41E296A3800889CED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EACBB21E296A3800889CED /* Main.storyboard */; };
 		20EACBB61E296A3800889CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EACBB51E296A3800889CED /* Assets.xcassets */; };
 		20EACBB91E296A3800889CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EACBB71E296A3800889CED /* LaunchScreen.storyboard */; };
@@ -37,9 +46,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		201751FD1E2975C20005F042 /* BNZColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BNZColor.swift; path = "Fonts and Colors/BNZColor.swift"; sourceTree = "<group>"; };
+		201751FF1E29F58E0005F042 /* BNZFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BNZFont.swift; path = "Fonts and Colors/BNZFont.swift"; sourceTree = "<group>"; };
+		201752011E2A02550005F042 /* MainControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainControler.swift; sourceTree = "<group>"; };
+		209C6EFB1E2A14D700E7223E /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		209C6F011E2A19E800E7223E /* MenuTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableCell.swift; path = Menu/TableViewCells/MenuTableCell.swift; sourceTree = "<group>"; };
+		209C6F041E2A256900E7223E /* Questionnaire.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Questionnaire.storyboard; path = Questionnaire/Questionnaire.storyboard; sourceTree = "<group>"; };
+		209C6F061E2A260D00E7223E /* QuestionnaireController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireController.swift; path = Questionnaire/QuestionnaireController.swift; sourceTree = "<group>"; };
+		209C6F091E2A380100E7223E /* InvestorTypes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = InvestorTypes.storyboard; path = InvestorTypes/InvestorTypes.storyboard; sourceTree = "<group>"; };
+		209C6F0C1E2A3BB600E7223E /* InvestorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvestorType.swift; path = Models/InvestorType.swift; sourceTree = "<group>"; };
 		20EACBAB1E296A3700889CED /* Booster Kiwisaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Booster Kiwisaver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EACBAE1E296A3800889CED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20EACBB01E296A3800889CED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20EACBB01E296A3800889CED /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
 		20EACBB31E296A3800889CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20EACBB51E296A3800889CED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20EACBB81E296A3800889CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,6 +107,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		201751FC1E2975990005F042 /* Fonts and Colors */ = {
+			isa = PBXGroup;
+			children = (
+				201751FD1E2975C20005F042 /* BNZColor.swift */,
+				201751FF1E29F58E0005F042 /* BNZFont.swift */,
+			);
+			name = "Fonts and Colors";
+			sourceTree = "<group>";
+		};
+		209C6EFF1E2A19AD00E7223E /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				209C6EFB1E2A14D700E7223E /* MenuController.swift */,
+				209C6F001E2A19B300E7223E /* MenuTableCell */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		209C6F001E2A19B300E7223E /* MenuTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				209C6F011E2A19E800E7223E /* MenuTableCell.swift */,
+			);
+			name = MenuTableCell;
+			sourceTree = "<group>";
+		};
+		209C6F031E2A253A00E7223E /* Questionnaire */ = {
+			isa = PBXGroup;
+			children = (
+				209C6F041E2A256900E7223E /* Questionnaire.storyboard */,
+				209C6F061E2A260D00E7223E /* QuestionnaireController.swift */,
+			);
+			name = Questionnaire;
+			sourceTree = "<group>";
+		};
+		209C6F081E2A37C100E7223E /* Investors */ = {
+			isa = PBXGroup;
+			children = (
+				209C6F091E2A380100E7223E /* InvestorTypes.storyboard */,
+			);
+			name = Investors;
+			sourceTree = "<group>";
+		};
+		209C6F0B1E2A3B5C00E7223E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				209C6F0C1E2A3BB600E7223E /* InvestorType.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		20EACBA21E296A3700889CED = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +183,15 @@
 		20EACBAD1E296A3800889CED /* Booster Kiwisaver */ = {
 			isa = PBXGroup;
 			children = (
+				209C6F0B1E2A3B5C00E7223E /* Models */,
 				20EACBAE1E296A3800889CED /* AppDelegate.swift */,
-				20EACBB01E296A3800889CED /* ViewController.swift */,
+				20EACBB01E296A3800889CED /* WelcomeController.swift */,
+				201752011E2A02550005F042 /* MainControler.swift */,
 				20EACBB21E296A3800889CED /* Main.storyboard */,
+				209C6EFF1E2A19AD00E7223E /* Menu */,
+				209C6F081E2A37C100E7223E /* Investors */,
+				209C6F031E2A253A00E7223E /* Questionnaire */,
+				201751FC1E2975990005F042 /* Fonts and Colors */,
 				20EACBB51E296A3800889CED /* Assets.xcassets */,
 				20EACBB71E296A3800889CED /* LaunchScreen.storyboard */,
 				20EACBBA1E296A3800889CED /* Info.plist */,
@@ -286,6 +361,8 @@
 			files = (
 				20EACBB91E296A3800889CED /* LaunchScreen.storyboard in Resources */,
 				20EACBB61E296A3800889CED /* Assets.xcassets in Resources */,
+				209C6F051E2A256900E7223E /* Questionnaire.storyboard in Resources */,
+				209C6F0A1E2A380100E7223E /* InvestorTypes.storyboard in Resources */,
 				20EACBB41E296A3800889CED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,8 +526,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20EACBB11E296A3800889CED /* ViewController.swift in Sources */,
+				20EACBB11E296A3800889CED /* WelcomeController.swift in Sources */,
+				209C6F021E2A19E800E7223E /* MenuTableCell.swift in Sources */,
+				201752001E29F58E0005F042 /* BNZFont.swift in Sources */,
+				209C6F071E2A260D00E7223E /* QuestionnaireController.swift in Sources */,
+				201752021E2A02550005F042 /* MainControler.swift in Sources */,
+				201751FE1E2975C20005F042 /* BNZColor.swift in Sources */,
+				209C6EFC1E2A14D700E7223E /* MenuController.swift in Sources */,
 				20EACBAF1E296A3800889CED /* AppDelegate.swift in Sources */,
+				209C6F0D1E2A3BB600E7223E /* InvestorType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,12 +682,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2927F44E5BD900A5EAD10648 /* Pods-Booster Kiwisaver.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y9SN6QP8BV;
 				INFOPLIST_FILE = "Booster Kiwisaver/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "nz.co.Booster-Kiwisaver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -614,12 +698,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2B053CB505A086AA175447A1 /* Pods-Booster Kiwisaver.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y9SN6QP8BV;
 				INFOPLIST_FILE = "Booster Kiwisaver/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "nz.co.Booster-Kiwisaver";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
