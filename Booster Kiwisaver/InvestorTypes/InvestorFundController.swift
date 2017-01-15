@@ -17,6 +17,9 @@ class InvestorFundController: UIViewController {
     @IBOutlet weak var pieChartView: PieChartView!
     @IBOutlet weak var investmentDetails: UILabel!
     
+    let allPieChartColors = [UIColor.moderateBlue(), UIColor.lessModerateBlue(), UIColor.verySoftBlue(), UIColor.verySoftGreen(), UIColor.veryVerySoftGreen(), UIColor.lightGrayishGreen()]
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +29,6 @@ class InvestorFundController: UIViewController {
         
         let fund:SectorFund = investorType.fundType
         setFormattedDetails(string: fund.fundDescription)
-//        investmentDetails.text = fund.fundDescription
         
         setChart(fund: fund)
     }
@@ -35,22 +37,30 @@ class InvestorFundController: UIViewController {
         let assets = ["Cash and cash equivalents", "New Zealand fixed interest", "International fixed interest", "Australasian equities", "International equities", "Listed property"]
         let dataValues = [fund.cashAndCashEquivalents, fund.nzFixedInterest, fund.internationalFixedInterest, fund.australassianEquities, fund.internationalEquities, fund.listedProperty]
         
+        var colors:[UIColor] = []
+        
         var dataEntries: [ChartDataEntry] = []
-//        var colors:
+
         var index = 0
         for i in 0..<assets.count {
-            
-            if dataValues[i] > 0 {
-                let dataEntry = ChartDataEntry(x: Double(dataValues[i]), y: Double(index))
+            let value = dataValues[i]
+            if value > 0 {
+                let dataEntry = PieChartDataEntry(value: Double(value), label: assets[i])//ChartDataEntry(x: Double(value), y: Double(value))
                 dataEntries.append(dataEntry)
+                colors.append(allPieChartColors[i])
                 //increment index
                 index += 1
+            }else{
+
             }
         }
         
+        //Set pie chart dataset and colors
         let pieChartDataSet = PieChartDataSet(values: dataEntries, label: "Test")
         let pieChartData = PieChartData(dataSet: pieChartDataSet)
-        pieChartDataSet.colors = [UIColor.red, UIColor.purple, UIColor.yellow, UIColor.green, UIColor.cyan, UIColor.magenta]
+        pieChartDataSet.colors = colors
+        pieChartDataSet.valueTextColor = UIColor.black
+        pieChartDataSet.valueLinePart1Length
         pieChartView.data = pieChartData
         
     }
