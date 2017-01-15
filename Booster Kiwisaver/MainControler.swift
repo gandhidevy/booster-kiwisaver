@@ -18,8 +18,8 @@ class MainController : UIViewController, UIMenuDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let menuNavigation:UISideMenuNavigationController = (storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController)!
         //Define Menu
+        let menuNavigation:UISideMenuNavigationController = (storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController)!
         SideMenuManager.menuLeftNavigationController = menuNavigation
         // Enable gestures. The left and/or right menus must be set up above for these to work.
         // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
@@ -27,46 +27,37 @@ class MainController : UIViewController, UIMenuDelegate  {
         SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
         
         SideMenuManager.menuFadeStatusBar = false
-                
+        
+        //Add central Title view logo
         let logo = UIImage(named: "Logo")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
         
         //show initial screen
         currentView = storyboard?.instantiateViewController(withIdentifier: "MainWelcomeScreen")
-        
         self.addChildViewController(currentView!)
         containerView.addSubview(currentView!.view)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-                //set menu controller delegate
-    }
-    
+    /**
+     * Delect method called when a menu item has been selected
+     */
     func didSelectMenuItem(indexPath: IndexPath) {
-
-        let qViewController:UIViewController
-            
-        if indexPath.section == 0 {
-            let fundController:InvestorFundController = UIStoryboard(name: "InvestorFund", bundle: nil).instantiateInitialViewController()! as! InvestorFundController
-            
-            fundController.investorType = InvestorType.getAllInvestorTypes()[indexPath.row]
-            
-            qViewController = fundController
-        }else {
-            
-            if !MenuController.isReadyToSubmit() {
-                qViewController = UIStoryboard(name: "Submit", bundle: nil).instantiateInitialViewController()!
-                
-            }else {
-                let questionairePageControl:QuestionnairePageController = UIStoryboard(name: "Questionnaire", bundle: nil).instantiateInitialViewController()! as! QuestionnairePageController
-
-                qViewController = questionairePageControl
-            }
+        
+        switch indexPath.section {
+            //Load Welcome controler
+            case 0:
+                return showWelcome()
+            //Load Investor Fund type screens
+            case 1:
+                return showInvestor(type: InvestorType.getAllInvestorTypes()[indexPath.row])
+            //Load questionaire or submit screen
+            case 2:
+                return showQuestionaire(orSubmit: !MenuController.isReadyToSubmit())
+            default:
+                break
         }
         
-        cycleFromViewController(toViewController: qViewController)
     }
     
     func cycleFromViewController(toViewController newViewController: UIViewController) {
@@ -79,7 +70,7 @@ class MainController : UIViewController, UIMenuDelegate  {
         newViewController.view.alpha = 0
         newViewController.view.layoutIfNeeded()
         
-        UIView.animate(withDuration: 0.3, animations: {
+        UIView.animate(withDuration: 0.2, animations: {
             newViewController.view.alpha = 1
             self.currentView!.view.alpha = 0
         }, completion:{ (Bool) in
@@ -87,6 +78,24 @@ class MainController : UIViewController, UIMenuDelegate  {
             self.currentView!.removeFromParentViewController()
             newViewController.didMove(toParentViewController: self)
         })
+    }
+    
+    func showQuestionaire(orSubmit submit:Bool) {
+        
+        var qViewController:UIViewController!
+
+        if submit {
+            qViewController = UIStoryboard(name: "Submit", bundle: nil).instantiateInitialViewController()!
+        }else {
+            qViewController = UIStoryboard(name: "Questionnaire", bundle: nil).instantiateInitialViewController()! as! QuestionnairePageController
+        }
+        
+        cycleFromViewController(toViewController: qViewController)
+    }
+    
+    func showWelcome() {
+        let controller = (storyboard?.instantiateViewController(withIdentifier: "MainWelcomeScreen"))!
+        cycleFromViewController(toViewController: controller)
     }
     
     func showInvestor(type:InvestorType) {

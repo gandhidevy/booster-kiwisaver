@@ -16,7 +16,7 @@ class MenuController: UITableViewController {
     
     var menuDelegate:UIMenuDelegate?
     
-    let menuSectionTitles = ["Investor Type", "Questionaire"]
+    let menuSectionTitles = ["", "Investor Type", "Questionaire"]
     
     var menuItems = [Array<String>]()
     
@@ -24,12 +24,13 @@ class MenuController: UITableViewController {
         super.viewDidLoad()
                 
         menuItems = [
+            ["Welcome"],
             InvestorType.getAllInvestorTypesStringValues(),
             ["Begin",]
         ]
     
         if MenuController.isReadyToSubmit() {
-            menuItems[1][0] = "Submit"
+            menuItems[2][0] = "Submit"
         }
         
         tableView.tableFooterView = UIView()

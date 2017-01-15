@@ -52,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IzO-4h-LyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-466.39999999999998" y="95.802098950524751"/>
+            <point key="canvasLocation" x="-326" y="96"/>
         </scene>
         <!--Questionnaire Content Controller-->
         <scene sceneID="KhY-bw-Zo1">
@@ -99,7 +99,7 @@ or for retirement needs? (From age 65 at the earliest)</string>
                                                 <constraint firstAttribute="trailing" secondItem="lfJ-1T-x1d" secondAttribute="trailing" constant="8" id="Sjr-qa-JGC"/>
                                                 <constraint firstItem="dX2-oJ-9tu" firstAttribute="top" secondItem="4S3-aT-UFG" secondAttribute="top" constant="8" id="Uah-fL-AkQ"/>
                                                 <constraint firstItem="dX2-oJ-9tu" firstAttribute="leading" secondItem="4S3-aT-UFG" secondAttribute="leading" constant="8" id="ff9-VB-zBI"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lfJ-1T-x1d" secondAttribute="bottom" constant="8" id="lux-Hd-Wr1"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lfJ-1T-x1d" secondAttribute="bottom" constant="20" id="lux-Hd-Wr1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

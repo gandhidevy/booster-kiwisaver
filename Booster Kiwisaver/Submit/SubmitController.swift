@@ -105,5 +105,15 @@ class SubmitController: UIViewController, UITextFieldDelegate, MFMailComposeView
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         
         controller.dismiss(animated: true, completion: nil)
+        
+        switch result {
+        case .sent:
+            //Only handling scenario for a successfully sent email, as the requirementts for other cases ie. saved has not been defined
+            let main:MainController = parent as! MainController
+            main.showWelcome()
+            break
+        default:
+            break
+        }
     }
 }
