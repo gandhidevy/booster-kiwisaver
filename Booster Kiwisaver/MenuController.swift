@@ -18,13 +18,20 @@ class MenuController: UITableViewController {
     
     let menuSectionTitles = ["Investor Type", "Questionaire"]
     
-    let menuItems = [
-        ["Defensive", "Conservative", "Balanced", "Balanced Growth", "Growth", "Aggressive Growth"],
-        ["Submit",]
-    ]
+    var menuItems = [Array<String>]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+                
+        menuItems = [
+            InvestorType.getAllInvestorTypesStringValues(),
+            ["Begin",]
+        ]
+    
+        if MenuController.isReadyToSubmit() {
+            menuItems[1][0] = "Submit"
+        }
+        
         tableView.tableFooterView = UIView()
     }
     
@@ -59,5 +66,10 @@ class MenuController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         //Dismiss the menu view
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    static func isReadyToSubmit() -> Bool {
+        let defaults = UserDefaults.standard
+        return defaults.integer(forKey: "QuestionaireFinalScore") > 0
     }
 }

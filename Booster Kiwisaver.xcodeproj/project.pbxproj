@@ -10,11 +10,22 @@
 		201751FE1E2975C20005F042 /* BNZColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201751FD1E2975C20005F042 /* BNZColor.swift */; };
 		201752001E29F58E0005F042 /* BNZFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201751FF1E29F58E0005F042 /* BNZFont.swift */; };
 		201752021E2A02550005F042 /* MainControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201752011E2A02550005F042 /* MainControler.swift */; };
+		201837421E2B405500DB84F3 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201837411E2B405500DB84F3 /* Charts.framework */; };
+		206748E61E2AC344005ADD90 /* BNZQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206748E51E2AC344005ADD90 /* BNZQuestion.swift */; };
+		206748E81E2AC3D1005ADD90 /* BNZAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206748E71E2AC3D1005ADD90 /* BNZAnswer.swift */; };
+		206748EA1E2ACC3D005ADD90 /* QuestionaireContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206748E91E2ACC3D005ADD90 /* QuestionaireContentController.swift */; };
+		206748ED1E2AD555005ADD90 /* QuestionDetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206748EC1E2AD555005ADD90 /* QuestionDetailTableCell.swift */; };
+		206748EF1E2AD595005ADD90 /* QuestionAnswerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206748EE1E2AD595005ADD90 /* QuestionAnswerTableCell.swift */; };
+		206748F31E2AEE1A005ADD90 /* BaseQuestionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206748F21E2AEE1A005ADD90 /* BaseQuestionTableCell.swift */; };
+		206748F51E2B078E005ADD90 /* QuestionnaireResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206748F41E2B078E005ADD90 /* QuestionnaireResultController.swift */; };
+		206748F71E2B0E30005ADD90 /* SectorFund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206748F61E2B0E30005ADD90 /* SectorFund.swift */; };
+		206748FA1E2B2836005ADD90 /* Submit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206748F91E2B2836005ADD90 /* Submit.storyboard */; };
+		206748FC1E2B2A1C005ADD90 /* SubmitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206748FB1E2B2A1C005ADD90 /* SubmitController.swift */; };
 		209C6EFC1E2A14D700E7223E /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C6EFB1E2A14D700E7223E /* MenuController.swift */; };
 		209C6F021E2A19E800E7223E /* MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C6F011E2A19E800E7223E /* MenuTableCell.swift */; };
 		209C6F051E2A256900E7223E /* Questionnaire.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209C6F041E2A256900E7223E /* Questionnaire.storyboard */; };
-		209C6F071E2A260D00E7223E /* QuestionnaireController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C6F061E2A260D00E7223E /* QuestionnaireController.swift */; };
-		209C6F0A1E2A380100E7223E /* InvestorTypes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209C6F091E2A380100E7223E /* InvestorTypes.storyboard */; };
+		209C6F071E2A260D00E7223E /* QuestionnairePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C6F061E2A260D00E7223E /* QuestionnairePageController.swift */; };
+		209C6F0A1E2A380100E7223E /* InvestorFund.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 209C6F091E2A380100E7223E /* InvestorFund.storyboard */; };
 		209C6F0D1E2A3BB600E7223E /* InvestorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C6F0C1E2A3BB600E7223E /* InvestorType.swift */; };
 		20EACBAF1E296A3800889CED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACBAE1E296A3800889CED /* AppDelegate.swift */; };
 		20EACBB11E296A3800889CED /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACBB01E296A3800889CED /* WelcomeController.swift */; };
@@ -23,6 +34,7 @@
 		20EACBB91E296A3800889CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EACBB71E296A3800889CED /* LaunchScreen.storyboard */; };
 		20EACBC41E296A3800889CED /* Booster_KiwisaverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACBC31E296A3800889CED /* Booster_KiwisaverTests.swift */; };
 		20EACBCF1E296A3800889CED /* Booster_KiwisaverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACBCE1E296A3800889CED /* Booster_KiwisaverUITests.swift */; };
+		20F8DE851E2B3E07002CA8C3 /* InvestorFundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8DE841E2B3E07002CA8C3 /* InvestorFundController.swift */; };
 		9360FC6815BC5C022D1C0227 /* Pods_Booster_KiwisaverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8EEC4877E9DE32CC48FE90 /* Pods_Booster_KiwisaverTests.framework */; };
 		CB38F15D742085324D605A21 /* Pods_Booster_Kiwisaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F02CF4EDF0501FA5D0C1B05 /* Pods_Booster_Kiwisaver.framework */; };
 		DAABBFA6F76EACE618F0DE53 /* Pods_Booster_KiwisaverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D8EC0077EC5F6D79D1702B /* Pods_Booster_KiwisaverUITests.framework */; };
@@ -49,11 +61,22 @@
 		201751FD1E2975C20005F042 /* BNZColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BNZColor.swift; path = "Fonts and Colors/BNZColor.swift"; sourceTree = "<group>"; };
 		201751FF1E29F58E0005F042 /* BNZFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BNZFont.swift; path = "Fonts and Colors/BNZFont.swift"; sourceTree = "<group>"; };
 		201752011E2A02550005F042 /* MainControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainControler.swift; sourceTree = "<group>"; };
+		201837411E2B405500DB84F3 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../../Library/Developer/Xcode/DerivedData/Booster_Kiwisaver-bkylmkuhrimgzsbswcrwtsbqiocb/Build/Products/Debug-iphonesimulator/Charts/Charts.framework"; sourceTree = "<group>"; };
+		206748E51E2AC344005ADD90 /* BNZQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BNZQuestion.swift; path = Models/BNZQuestion.swift; sourceTree = "<group>"; };
+		206748E71E2AC3D1005ADD90 /* BNZAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BNZAnswer.swift; path = Models/BNZAnswer.swift; sourceTree = "<group>"; };
+		206748E91E2ACC3D005ADD90 /* QuestionaireContentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionaireContentController.swift; path = Questionnaire/QuestionaireContentController.swift; sourceTree = "<group>"; };
+		206748EC1E2AD555005ADD90 /* QuestionDetailTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionDetailTableCell.swift; path = Questionnaire/QuestionContentCells/QuestionDetailTableCell.swift; sourceTree = "<group>"; };
+		206748EE1E2AD595005ADD90 /* QuestionAnswerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionAnswerTableCell.swift; path = Questionnaire/QuestionContentCells/QuestionAnswerTableCell.swift; sourceTree = "<group>"; };
+		206748F21E2AEE1A005ADD90 /* BaseQuestionTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseQuestionTableCell.swift; path = Questionnaire/QuestionContentCells/BaseQuestionTableCell.swift; sourceTree = "<group>"; };
+		206748F41E2B078E005ADD90 /* QuestionnaireResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireResultController.swift; path = Questionnaire/QuestionnaireResultController.swift; sourceTree = "<group>"; };
+		206748F61E2B0E30005ADD90 /* SectorFund.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SectorFund.swift; path = Models/SectorFund.swift; sourceTree = "<group>"; };
+		206748F91E2B2836005ADD90 /* Submit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Submit.storyboard; path = Submit/Submit.storyboard; sourceTree = "<group>"; };
+		206748FB1E2B2A1C005ADD90 /* SubmitController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubmitController.swift; path = Submit/SubmitController.swift; sourceTree = "<group>"; };
 		209C6EFB1E2A14D700E7223E /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		209C6F011E2A19E800E7223E /* MenuTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTableCell.swift; path = Menu/TableViewCells/MenuTableCell.swift; sourceTree = "<group>"; };
 		209C6F041E2A256900E7223E /* Questionnaire.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Questionnaire.storyboard; path = Questionnaire/Questionnaire.storyboard; sourceTree = "<group>"; };
-		209C6F061E2A260D00E7223E /* QuestionnaireController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnaireController.swift; path = Questionnaire/QuestionnaireController.swift; sourceTree = "<group>"; };
-		209C6F091E2A380100E7223E /* InvestorTypes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = InvestorTypes.storyboard; path = InvestorTypes/InvestorTypes.storyboard; sourceTree = "<group>"; };
+		209C6F061E2A260D00E7223E /* QuestionnairePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionnairePageController.swift; path = Questionnaire/QuestionnairePageController.swift; sourceTree = "<group>"; };
+		209C6F091E2A380100E7223E /* InvestorFund.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = InvestorFund.storyboard; path = InvestorTypes/InvestorFund.storyboard; sourceTree = "<group>"; };
 		209C6F0C1E2A3BB600E7223E /* InvestorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvestorType.swift; path = Models/InvestorType.swift; sourceTree = "<group>"; };
 		20EACBAB1E296A3700889CED /* Booster Kiwisaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Booster Kiwisaver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EACBAE1E296A3800889CED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +91,7 @@
 		20EACBCA1E296A3800889CED /* Booster KiwisaverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Booster KiwisaverUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EACBCE1E296A3800889CED /* Booster_KiwisaverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booster_KiwisaverUITests.swift; sourceTree = "<group>"; };
 		20EACBD01E296A3800889CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F8DE841E2B3E07002CA8C3 /* InvestorFundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvestorFundController.swift; path = InvestorTypes/InvestorFundController.swift; sourceTree = "<group>"; };
 		2927F44E5BD900A5EAD10648 /* Pods-Booster Kiwisaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster Kiwisaver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Booster Kiwisaver/Pods-Booster Kiwisaver.debug.xcconfig"; sourceTree = "<group>"; };
 		2B053CB505A086AA175447A1 /* Pods-Booster Kiwisaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster Kiwisaver.release.xcconfig"; path = "Pods/Target Support Files/Pods-Booster Kiwisaver/Pods-Booster Kiwisaver.release.xcconfig"; sourceTree = "<group>"; };
 		3F02CF4EDF0501FA5D0C1B05 /* Pods_Booster_Kiwisaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Booster_Kiwisaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201837421E2B405500DB84F3 /* Charts.framework in Frameworks */,
 				CB38F15D742085324D605A21 /* Pods_Booster_Kiwisaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +141,25 @@
 			name = "Fonts and Colors";
 			sourceTree = "<group>";
 		};
+		206748EB1E2AD51E005ADD90 /* QuestionContentCells */ = {
+			isa = PBXGroup;
+			children = (
+				206748EC1E2AD555005ADD90 /* QuestionDetailTableCell.swift */,
+				206748EE1E2AD595005ADD90 /* QuestionAnswerTableCell.swift */,
+				206748F21E2AEE1A005ADD90 /* BaseQuestionTableCell.swift */,
+			);
+			name = QuestionContentCells;
+			sourceTree = "<group>";
+		};
+		206748F81E2B27EC005ADD90 /* Submit */ = {
+			isa = PBXGroup;
+			children = (
+				206748F91E2B2836005ADD90 /* Submit.storyboard */,
+				206748FB1E2B2A1C005ADD90 /* SubmitController.swift */,
+			);
+			name = Submit;
+			sourceTree = "<group>";
+		};
 		209C6EFF1E2A19AD00E7223E /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +181,10 @@
 			isa = PBXGroup;
 			children = (
 				209C6F041E2A256900E7223E /* Questionnaire.storyboard */,
-				209C6F061E2A260D00E7223E /* QuestionnaireController.swift */,
+				209C6F061E2A260D00E7223E /* QuestionnairePageController.swift */,
+				206748E91E2ACC3D005ADD90 /* QuestionaireContentController.swift */,
+				206748F41E2B078E005ADD90 /* QuestionnaireResultController.swift */,
+				206748EB1E2AD51E005ADD90 /* QuestionContentCells */,
 			);
 			name = Questionnaire;
 			sourceTree = "<group>";
@@ -145,7 +192,8 @@
 		209C6F081E2A37C100E7223E /* Investors */ = {
 			isa = PBXGroup;
 			children = (
-				209C6F091E2A380100E7223E /* InvestorTypes.storyboard */,
+				209C6F091E2A380100E7223E /* InvestorFund.storyboard */,
+				20F8DE841E2B3E07002CA8C3 /* InvestorFundController.swift */,
 			);
 			name = Investors;
 			sourceTree = "<group>";
@@ -154,6 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				209C6F0C1E2A3BB600E7223E /* InvestorType.swift */,
+				206748F61E2B0E30005ADD90 /* SectorFund.swift */,
+				206748E51E2AC344005ADD90 /* BNZQuestion.swift */,
+				206748E71E2AC3D1005ADD90 /* BNZAnswer.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -183,14 +234,15 @@
 		20EACBAD1E296A3800889CED /* Booster Kiwisaver */ = {
 			isa = PBXGroup;
 			children = (
-				209C6F0B1E2A3B5C00E7223E /* Models */,
 				20EACBAE1E296A3800889CED /* AppDelegate.swift */,
 				20EACBB01E296A3800889CED /* WelcomeController.swift */,
 				201752011E2A02550005F042 /* MainControler.swift */,
 				20EACBB21E296A3800889CED /* Main.storyboard */,
+				209C6F0B1E2A3B5C00E7223E /* Models */,
 				209C6EFF1E2A19AD00E7223E /* Menu */,
 				209C6F081E2A37C100E7223E /* Investors */,
 				209C6F031E2A253A00E7223E /* Questionnaire */,
+				206748F81E2B27EC005ADD90 /* Submit */,
 				201751FC1E2975990005F042 /* Fonts and Colors */,
 				20EACBB51E296A3800889CED /* Assets.xcassets */,
 				20EACBB71E296A3800889CED /* LaunchScreen.storyboard */,
@@ -220,6 +272,7 @@
 		43FA6F5D688D6ABCF4527B3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				201837411E2B405500DB84F3 /* Charts.framework */,
 				3F02CF4EDF0501FA5D0C1B05 /* Pods_Booster_Kiwisaver.framework */,
 				5B8EEC4877E9DE32CC48FE90 /* Pods_Booster_KiwisaverTests.framework */,
 				99D8EC0077EC5F6D79D1702B /* Pods_Booster_KiwisaverUITests.framework */,
@@ -359,10 +412,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206748FA1E2B2836005ADD90 /* Submit.storyboard in Resources */,
 				20EACBB91E296A3800889CED /* LaunchScreen.storyboard in Resources */,
 				20EACBB61E296A3800889CED /* Assets.xcassets in Resources */,
 				209C6F051E2A256900E7223E /* Questionnaire.storyboard in Resources */,
-				209C6F0A1E2A380100E7223E /* InvestorTypes.storyboard in Resources */,
+				209C6F0A1E2A380100E7223E /* InvestorFund.storyboard in Resources */,
 				20EACBB41E296A3800889CED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,14 +580,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206748F71E2B0E30005ADD90 /* SectorFund.swift in Sources */,
 				20EACBB11E296A3800889CED /* WelcomeController.swift in Sources */,
 				209C6F021E2A19E800E7223E /* MenuTableCell.swift in Sources */,
 				201752001E29F58E0005F042 /* BNZFont.swift in Sources */,
-				209C6F071E2A260D00E7223E /* QuestionnaireController.swift in Sources */,
+				209C6F071E2A260D00E7223E /* QuestionnairePageController.swift in Sources */,
+				206748ED1E2AD555005ADD90 /* QuestionDetailTableCell.swift in Sources */,
+				206748F31E2AEE1A005ADD90 /* BaseQuestionTableCell.swift in Sources */,
+				206748E61E2AC344005ADD90 /* BNZQuestion.swift in Sources */,
+				206748EF1E2AD595005ADD90 /* QuestionAnswerTableCell.swift in Sources */,
+				206748FC1E2B2A1C005ADD90 /* SubmitController.swift in Sources */,
+				206748F51E2B078E005ADD90 /* QuestionnaireResultController.swift in Sources */,
 				201752021E2A02550005F042 /* MainControler.swift in Sources */,
 				201751FE1E2975C20005F042 /* BNZColor.swift in Sources */,
 				209C6EFC1E2A14D700E7223E /* MenuController.swift in Sources */,
 				20EACBAF1E296A3800889CED /* AppDelegate.swift in Sources */,
+				20F8DE851E2B3E07002CA8C3 /* InvestorFundController.swift in Sources */,
+				206748E81E2AC3D1005ADD90 /* BNZAnswer.swift in Sources */,
+				206748EA1E2ACC3D005ADD90 /* QuestionaireContentController.swift in Sources */,
 				209C6F0D1E2A3BB600E7223E /* InvestorType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -746,7 +810,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AA291477A64D141B7A17EFE2 /* Pods-Booster KiwisaverUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = Y9SN6QP8BV;
 				INFOPLIST_FILE = "Booster KiwisaverUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -761,7 +825,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E7AD5DDA4906C7FF2787ABCB /* Pods-Booster KiwisaverUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = Y9SN6QP8BV;
 				INFOPLIST_FILE = "Booster KiwisaverUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

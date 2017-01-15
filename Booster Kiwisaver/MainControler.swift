@@ -13,6 +13,8 @@ class MainController : UIViewController, UIMenuDelegate  {
     
     @IBOutlet weak var containerView: UIView!
     
+    var currentView:UIViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,7 +25,18 @@ class MainController : UIViewController, UIMenuDelegate  {
         // Note that these continue to work on the Navigation Controller independent of the View Controller it displays!
         SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
         SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
-     
+        
+        SideMenuManager.menuFadeStatusBar = false
+                
+        let logo = UIImage(named: "Logo")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
+        
+        //show initial screen
+        currentView = storyboard?.instantiateViewController(withIdentifier: "MainWelcomeScreen")
+        
+        self.addChildViewController(currentView!)
+        containerView.addSubview(currentView!.view)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,22 +49,52 @@ class MainController : UIViewController, UIMenuDelegate  {
         let qViewController:UIViewController
             
         if indexPath.section == 0 {
-            qViewController = UIStoryboard(name: "InvestorTypes", bundle: nil).instantiateInitialViewController()!
+            let fundController:InvestorFundController = UIStoryboard(name: "InvestorFund", bundle: nil).instantiateInitialViewController()! as! InvestorFundController
+            
+            fundController.investorType = InvestorType.getAllInvestorTypes()[indexPath.row]
+            
+            qViewController = fundController
         }else {
-            qViewController = UIStoryboard(name: "Questionnaire", bundle: nil).instantiateInitialViewController()!
+            
+            if !MenuController.isReadyToSubmit() {
+                qViewController = UIStoryboard(name: "Submit", bundle: nil).instantiateInitialViewController()!
+                
+            }else {
+                let questionairePageControl:QuestionnairePageController = UIStoryboard(name: "Questionnaire", bundle: nil).instantiateInitialViewController()! as! QuestionnairePageController
+
+                qViewController = questionairePageControl
+            }
         }
         
-        addChildViewController(qViewController)
-        view.addSubview(qViewController.view)
+        cycleFromViewController(toViewController: qViewController)
+    }
+    
+    func cycleFromViewController(toViewController newViewController: UIViewController) {
         
-        qViewController.view.frame = view.bounds
-        qViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        currentView!.willMove(toParentViewController: nil)
+        addChildViewController(newViewController)
+        containerView.addSubview(newViewController.view)
+        newViewController.view.frame = view.bounds
         
-        // Notify Child View Controller
-        qViewController.didMove(toParentViewController: self)
+        newViewController.view.alpha = 0
+        newViewController.view.layoutIfNeeded()
         
-        qViewController.view.alpha = 0
-        qViewController.view.layoutIfNeeded()
+        UIView.animate(withDuration: 0.3, animations: {
+            newViewController.view.alpha = 1
+            self.currentView!.view.alpha = 0
+        }, completion:{ (Bool) in
+            self.currentView!.view.removeFromSuperview()
+            self.currentView!.removeFromParentViewController()
+            newViewController.didMove(toParentViewController: self)
+        })
+    }
+    
+    func showInvestor(type:InvestorType) {
+        let fundController:InvestorFundController = UIStoryboard(name: "InvestorFund", bundle: nil).instantiateInitialViewController()! as! InvestorFundController
+        
+        fundController.investorType = type
+        
+        cycleFromViewController(toViewController: fundController)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

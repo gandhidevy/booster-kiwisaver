@@ -2,20 +2,21 @@
 platform :ios, '8.0'
 use_frameworks!
 
+
+def podsToInstall
+    inherit! :search_paths
+    pod 'SideMenu'
+    pod 'Charts'
+end
+
 target 'Booster Kiwisaver' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworksz  use_frameworks!
-  pod 'SideMenu'
-  # Pods for Booster Kiwisaver
+    podsToInstall
 end
 
 target 'Booster KiwisaverTests' do
-    inherit! :search_paths
-    # Pods for testing
-    pod 'SideMenu'
+    podsToInstall
 end
 
 target 'Booster KiwisaverUITests' do
-    inherit! :search_paths
-# Pods for testing
-#    pod 'SideMenu'
+    podsToInstall
 end
