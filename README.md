@@ -14,13 +14,13 @@ This is simple application to give an overview of Boosters Kiwisaver Investment 
 * Functional Questionaire, that can also be submitted via email
 
 #### Incomplete Feature
-* Sadly I did not have enough spare time to implement the ability to jump to another question/end the questionaire early depending on answers given by the user, but this functionaility could be implemented within the action 'next' button, as the next question to display is determined there.
+* Need a better Visual to indicate jump to end of survey depending on answered questions.
 
 #### Notes:
 * While working out the navigation flow for the questionaire, I was uncertain if a user should be able to go back and forward to question, so i decided to to mimic the wireframes and only have a next button.
 * Another feature I think that would improve UX, if once they tap an answer it takes them to the next question, only if the user is able to go back and forward questions, or else users would not be able to assess if their choice was the correct one.
 * Sadly I was not able to get the correct fonts from the website, so i decided to use the devices System font. Could not find a free font of 'CircularTT-Bold'
-* Was not clear if once a questionaire was complete that a user could start another before submitting the previous one, made call that based on wireframes that before starting another questionaire previous one must be submitted.
+* Once a questionaire was complete, the submit button will appear int the menu, but the user is still able to perform another questionaire. By completing a questionaire, it will overwrite the previous results if they have not yet submitted their previous score.
 * The nvaigation flow was unclear for the questionaire, so I tried to mimic the wireframes as much as possible.
 * From a data collection perspective submitting just the score would be enough, having more data about the user such as the answers to their questions would provide a better of whom you are talking about
 
