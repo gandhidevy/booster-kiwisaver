@@ -19,6 +19,7 @@ This is simple application to give an overview of Boosters Kiwisaver Investment 
 * Sadly I was not able to get the correct fonts from the website, so i decided to use the devices System font. Could not find a free font of 'CircularTT-Bold'
 * Was not clear if once a questionaire was complete that a user could start another before submitting the previous one, made call that based on wireframes that before starting another questionaire previous one must be submitted.
 * The nvaigation flow was unclear for the questionaire, so I tried to mimic the wireframes as much as possible.
+* From a data collection perspective submitting just the score would be enough, having more data about the user such as the answers to their questions would provide a better of whom you are talking about
 
 
 
