@@ -113,6 +113,7 @@ class SubmitController: UIViewController, UITextFieldDelegate, MFMailComposeView
             //Only handling scenario for a successfully sent email, as the requirementts for other cases ie. saved has not been defined
             let defaults = UserDefaults.standard
             defaults.set(0, forKey: "QuestionaireFinalScore")
+            defaults.set("", forKey: "QuestionaireFinalInvestorType")
             defaults.synchronize()
             
             

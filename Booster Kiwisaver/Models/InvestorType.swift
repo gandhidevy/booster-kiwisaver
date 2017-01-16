@@ -65,6 +65,15 @@ class InvestorType: NSObject {
         return [InvestorType.Defensive(), InvestorType.Conservative(), InvestorType.Balanced(), InvestorType.BalancedGrowth(), InvestorType.Growth(), InvestorType.AggressiveGrowth()]
     }
     
+    static func getInvestorTypeBasedOn(string:String) -> InvestorType? {
+        for type in InvestorType.getAllInvestorTypes() {
+            if type.name == string {
+                return type
+            }
+        }
+        return nil
+    }
+    
     static func getAllInvestorTypesStringValues() -> [String]{
         var types = [String]()
         
