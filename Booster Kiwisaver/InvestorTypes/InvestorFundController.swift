@@ -17,6 +17,9 @@ class InvestorFundController: UIViewController {
     @IBOutlet weak var pieChartView: PieChartView!
     @IBOutlet weak var investmentDetails: UILabel!
     
+    @IBOutlet weak var growthAssetsLabel: UILabel!
+    @IBOutlet weak var incomeAssetsLabel: UILabel!
+    
     let allPieChartColors = [UIColor.moderateBlue(), UIColor.lessModerateBlue(), UIColor.verySoftBlue(), UIColor.verySoftGreen(), UIColor.veryVerySoftGreen(), UIColor.lightGrayishGreen()]
 
     
@@ -29,6 +32,9 @@ class InvestorFundController: UIViewController {
         
         let fund:SectorFund = investorType.fundType
         setFormattedDetails(string: fund.fundDescription)
+        
+        growthAssetsLabel.text = "Growth Assets: \(Int(fund.growthAssetsPercent()))%"
+        incomeAssetsLabel.text = "Income Assets: \(Int(fund.incomeAssetsPercent()))%"
         
         setChart(fund: fund)
     }
@@ -45,7 +51,7 @@ class InvestorFundController: UIViewController {
         for i in 0..<assets.count {
             let value = dataValues[i]
             if value > 0 {
-                let dataEntry = PieChartDataEntry(value: Double(value), label: assets[i])//ChartDataEntry(x: Double(value), y: Double(value))
+                let dataEntry = PieChartDataEntry(value: Double(value), label: "\(assets[i]) - \(value)%")
                 dataEntries.append(dataEntry)
                 colors.append(allPieChartColors[i])
                 //increment index
@@ -56,13 +62,31 @@ class InvestorFundController: UIViewController {
         }
         
         //Set pie chart dataset and colors
-        let pieChartDataSet = PieChartDataSet(values: dataEntries, label: "Test")
+        let pieChartDataSet = PieChartDataSet(values: dataEntries, label: "")
         let pieChartData = PieChartData(dataSet: pieChartDataSet)
+        
         pieChartDataSet.colors = colors
         pieChartDataSet.valueTextColor = UIColor.black
-        pieChartDataSet.valueLinePart1Length
+        pieChartView.drawEntryLabelsEnabled = false
+        pieChartDataSet.yValuePosition = .outsideSlice
+
+        let numFormatter = NumberFormatter()
+        numFormatter.numberStyle = .percent
+        numFormatter.maximumFractionDigits = 1
+        numFormatter.multiplier = 1.0
+        numFormatter.percentSymbol = " %"
+        
+        pieChartData.setValueFormatter(DefaultValueFormatter(formatter: numFormatter))
         pieChartView.data = pieChartData
         
+        //Remove 'Description Label' text
+        let descript:Description = Description()
+        descript.text = ""
+        
+        //Pie chart offest value
+        let offset:CGFloat = 10.0
+        pieChartView.chartDescription = descript
+        pieChartView.setExtraOffsets(left: offset, top: 0, right: offset, bottom: 0)
     }
     
     func setFormattedDetails(string : String) {

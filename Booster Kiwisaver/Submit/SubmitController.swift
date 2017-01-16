@@ -84,7 +84,9 @@ class SubmitController: UIViewController, UITextFieldDelegate, MFMailComposeView
         composeVC.setToRecipients(["me@example.com"])
         composeVC.setSubject("Completed questionaire submission")
         
-        let msg:String = "Hello, \n These are my details and score: \nName: \(name) \nEmail: \(email) \nPhone: \(phone) \n\nMy My score for the questionaire was: \(36)"
+        let defaults = UserDefaults.standard
+        
+        let msg:String = "Hello, \n These are my details and score: \nName: \(name) \nEmail: \(email) \nPhone: \(phone) \n\nMy score for the questionaire was: \(defaults.integer(forKey: "QuestionaireFinalScore"))"
         
         composeVC.setMessageBody(msg, isHTML: false)
         
@@ -109,8 +111,23 @@ class SubmitController: UIViewController, UITextFieldDelegate, MFMailComposeView
         switch result {
         case .sent:
             //Only handling scenario for a successfully sent email, as the requirementts for other cases ie. saved has not been defined
-            let main:MainController = parent as! MainController
-            main.showWelcome()
+            let defaults = UserDefaults.standard
+            defaults.set(0, forKey: "QuestionaireFinalScore")
+            defaults.synchronize()
+            
+            
+            //Present success message to user
+            let alert:UIAlertController = UIAlertController(title:"Yay", message: "Your score has been submitted! We will be in contact shortly.", preferredStyle: UIAlertControllerStyle.alert)
+            
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (UIAlertAction) in
+                let main:MainController = self.parent as! MainController
+                main.showWelcome()
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+            
+            
+
             break
         default:
             break

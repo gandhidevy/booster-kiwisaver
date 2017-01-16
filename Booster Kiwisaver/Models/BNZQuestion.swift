@@ -12,7 +12,7 @@ class BNZQuestion {
     let text:String
     var possibleAnsers = [BNZAnswer]()
     
-    var selectedAnswerIndex:Int?
+    var selectedAnswerIndex:Int = -1
     
     init(text:String) {
         self.text = text

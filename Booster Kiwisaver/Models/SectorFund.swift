@@ -23,9 +23,11 @@ class SectorFund {
         
         self.name = name
         self.fundDescription = fundDescription
+        
         self.cashAndCashEquivalents = cashAndCashEquivalents
         self.nzFixedInterest = nzFixedInterest
         self.internationalFixedInterest = internationalFixedInterest
+        self.australassianEquities = australassianEquities
         self.internationalEquities = internationalEquities
         self.listedProperty = listedProperty
     }
@@ -46,7 +48,7 @@ class SectorFund {
                          nzFixedInterest: 15.0,
                          internationalFixedInterest: 10.0,
                          australassianEquities:5.0,
-                         internationalEquities: 5.0,
+                         internationalEquities: 10.0,
                          listedProperty: 0.0)
     }
     

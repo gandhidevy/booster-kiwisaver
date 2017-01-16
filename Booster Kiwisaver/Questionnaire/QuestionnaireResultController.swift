@@ -20,7 +20,7 @@ class QuestionnaireResultController: UIViewController {
         var finalScore:Int = 0
         
         for q in questionsResults! {
-            let answer:BNZAnswer = q.possibleAnsers[q.selectedAnswerIndex!] as BNZAnswer
+            let answer:BNZAnswer = q.possibleAnsers[q.selectedAnswerIndex] as BNZAnswer
             finalScore+=answer.score
         }
         
@@ -28,8 +28,18 @@ class QuestionnaireResultController: UIViewController {
         
         let investorType:InvestorType = InvestorType.getInvestorTypeBaseOn(score: finalScore)!
         
-        investorTypeLabel.text = "You are a \"\(investorType.name)\" investor"
+//        investorTypeLabel.text = "You are a \"\(investorType.name)\" investor"
         
+        let smallHeader = [NSForegroundColorAttributeName : UIColor.black, NSFontAttributeName : UIFont.systemFont(ofSize: 18)]
+        let largeHeader = [NSForegroundColorAttributeName : UIColor.black, NSFontAttributeName : UIFont.systemFont(ofSize: 26)]
+        
+        
+        let attrString:NSMutableAttributedString = NSMutableAttributedString(string: "You are a", attributes: smallHeader)
+        attrString.append(NSAttributedString(string: " \(investorType.name) ", attributes: largeHeader))
+        attrString.append(NSAttributedString(string: "investor", attributes: smallHeader))
+        
+        investorTypeLabel.attributedText = attrString
+    
         let defaults = UserDefaults.standard
         defaults.set(finalScore, forKey: "QuestionaireFinalScore")
         defaults.synchronize()

@@ -12,7 +12,7 @@ class QuestionnaireContentController: UIViewController, UITableViewDelegate, UIT
     
     @IBOutlet weak var tableView: UITableView!
     var pageIndex:Int!
-    
+    var pageViewController:QuestionnairePageController?
     var question:BNZQuestion?
     
     override func viewDidLoad() {
@@ -65,13 +65,22 @@ class QuestionnaireContentController: UIViewController, UITableViewDelegate, UIT
         
         if((indexPath?.row)! > 0){
             
+            
             let selectedAnswerIndex:Int = indexPath!.row - 1
+            
+            if (question?.selectedAnswerIndex)! > -1 {
+                //unselect old answer
+                (tableView.cellForRow(at: IndexPath(row: (question?.selectedAnswerIndex)! + 1, section: 0)) as! QuestionAnswerTableCell).setButtonSelected(selected: false)
+            }
+            
             question?.selectedAnswerIndex = selectedAnswerIndex
+            //selcet new answer
+            (tableView.cellForRow(at:indexPath!) as! QuestionAnswerTableCell).setButtonSelected(selected: true)
             
-            tableView.reloadData()
-            
+            if pageViewController != nil {
+                pageViewController?.configureNextButton()
+            }
         }
-        
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

@@ -22,7 +22,12 @@ class MenuController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        
+        //Add central Title view logo
+        let logo = UIImage(named: "Logo")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
+        
         menuItems = [
             ["Welcome"],
             InvestorType.getAllInvestorTypesStringValues(),

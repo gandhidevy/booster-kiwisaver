@@ -36,7 +36,11 @@ class MainController : UIViewController, UIMenuDelegate  {
         //show initial screen
         currentView = storyboard?.instantiateViewController(withIdentifier: "MainWelcomeScreen")
         self.addChildViewController(currentView!)
+        currentView?.view.frame = view.bounds
         containerView.addSubview(currentView!.view)
+        view.layoutIfNeeded()
+        currentView?.view.frame = view.bounds
+        currentView?.view.layoutIfNeeded()
     }
     
     /**
@@ -53,7 +57,7 @@ class MainController : UIViewController, UIMenuDelegate  {
                 return showInvestor(type: InvestorType.getAllInvestorTypes()[indexPath.row])
             //Load questionaire or submit screen
             case 2:
-                return showQuestionaire(orSubmit: !MenuController.isReadyToSubmit())
+                return showQuestionaire(orSubmit: MenuController.isReadyToSubmit())
             default:
                 break
         }

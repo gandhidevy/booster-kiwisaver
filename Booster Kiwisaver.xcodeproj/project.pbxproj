@@ -35,9 +35,9 @@
 		20EACBC41E296A3800889CED /* Booster_KiwisaverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACBC31E296A3800889CED /* Booster_KiwisaverTests.swift */; };
 		20EACBCF1E296A3800889CED /* Booster_KiwisaverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EACBCE1E296A3800889CED /* Booster_KiwisaverUITests.swift */; };
 		20F8DE851E2B3E07002CA8C3 /* InvestorFundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F8DE841E2B3E07002CA8C3 /* InvestorFundController.swift */; };
-		9360FC6815BC5C022D1C0227 /* Pods_Booster_KiwisaverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8EEC4877E9DE32CC48FE90 /* Pods_Booster_KiwisaverTests.framework */; };
-		CB38F15D742085324D605A21 /* Pods_Booster_Kiwisaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F02CF4EDF0501FA5D0C1B05 /* Pods_Booster_Kiwisaver.framework */; };
-		DAABBFA6F76EACE618F0DE53 /* Pods_Booster_KiwisaverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D8EC0077EC5F6D79D1702B /* Pods_Booster_KiwisaverUITests.framework */; };
+		CC02DB4560E4EF74FFD259FC /* Pods_Booster_KiwisaverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE3A0BDD1928B9BC9D0FD5CB /* Pods_Booster_KiwisaverTests.framework */; };
+		EFBE1FEDB9A38EBACA5D0199 /* Pods_Booster_KiwisaverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B756F1C78010C766032E98F5 /* Pods_Booster_KiwisaverUITests.framework */; };
+		F148CB4EC2424F2A2B34C13C /* Pods_Booster_Kiwisaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F26F86A7F54CC72E8C5B100 /* Pods_Booster_Kiwisaver.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,15 +92,15 @@
 		20EACBCE1E296A3800889CED /* Booster_KiwisaverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booster_KiwisaverUITests.swift; sourceTree = "<group>"; };
 		20EACBD01E296A3800889CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20F8DE841E2B3E07002CA8C3 /* InvestorFundController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InvestorFundController.swift; path = InvestorTypes/InvestorFundController.swift; sourceTree = "<group>"; };
-		2927F44E5BD900A5EAD10648 /* Pods-Booster Kiwisaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster Kiwisaver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Booster Kiwisaver/Pods-Booster Kiwisaver.debug.xcconfig"; sourceTree = "<group>"; };
-		2B053CB505A086AA175447A1 /* Pods-Booster Kiwisaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster Kiwisaver.release.xcconfig"; path = "Pods/Target Support Files/Pods-Booster Kiwisaver/Pods-Booster Kiwisaver.release.xcconfig"; sourceTree = "<group>"; };
-		3F02CF4EDF0501FA5D0C1B05 /* Pods_Booster_Kiwisaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Booster_Kiwisaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B8EEC4877E9DE32CC48FE90 /* Pods_Booster_KiwisaverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Booster_KiwisaverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99D8EC0077EC5F6D79D1702B /* Pods_Booster_KiwisaverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Booster_KiwisaverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA291477A64D141B7A17EFE2 /* Pods-Booster KiwisaverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster KiwisaverUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Booster KiwisaverUITests/Pods-Booster KiwisaverUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BA2A462428AB4FAA13BD5834 /* Pods-Booster KiwisaverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster KiwisaverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Booster KiwisaverTests/Pods-Booster KiwisaverTests.release.xcconfig"; sourceTree = "<group>"; };
-		BCEC8F6E82EF4612A0955FB4 /* Pods-Booster KiwisaverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster KiwisaverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Booster KiwisaverTests/Pods-Booster KiwisaverTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E7AD5DDA4906C7FF2787ABCB /* Pods-Booster KiwisaverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster KiwisaverUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Booster KiwisaverUITests/Pods-Booster KiwisaverUITests.release.xcconfig"; sourceTree = "<group>"; };
+		48ECB0A7F7F593D9233E2781 /* Pods-Booster KiwisaverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster KiwisaverTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Booster KiwisaverTests/Pods-Booster KiwisaverTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4F26F86A7F54CC72E8C5B100 /* Pods_Booster_Kiwisaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Booster_Kiwisaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		580DB038771305778FF1FF39 /* Pods-Booster KiwisaverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster KiwisaverUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Booster KiwisaverUITests/Pods-Booster KiwisaverUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B756F1C78010C766032E98F5 /* Pods_Booster_KiwisaverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Booster_KiwisaverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C38CD264D9D52D27DFB75F27 /* Pods-Booster KiwisaverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster KiwisaverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Booster KiwisaverTests/Pods-Booster KiwisaverTests.release.xcconfig"; sourceTree = "<group>"; };
+		C94429A4279635BF711B8A36 /* Pods-Booster Kiwisaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster Kiwisaver.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Booster Kiwisaver/Pods-Booster Kiwisaver.debug.xcconfig"; sourceTree = "<group>"; };
+		DB89329C3C50889CC129D0D8 /* Pods-Booster Kiwisaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster Kiwisaver.release.xcconfig"; path = "Pods/Target Support Files/Pods-Booster Kiwisaver/Pods-Booster Kiwisaver.release.xcconfig"; sourceTree = "<group>"; };
+		DE3A0BDD1928B9BC9D0FD5CB /* Pods_Booster_KiwisaverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Booster_KiwisaverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C71C347135AAAA54D0D989 /* Pods-Booster KiwisaverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Booster KiwisaverUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Booster KiwisaverUITests/Pods-Booster KiwisaverUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				201837421E2B405500DB84F3 /* Charts.framework in Frameworks */,
-				CB38F15D742085324D605A21 /* Pods_Booster_Kiwisaver.framework in Frameworks */,
+				F148CB4EC2424F2A2B34C13C /* Pods_Booster_Kiwisaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9360FC6815BC5C022D1C0227 /* Pods_Booster_KiwisaverTests.framework in Frameworks */,
+				CC02DB4560E4EF74FFD259FC /* Pods_Booster_KiwisaverTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAABBFA6F76EACE618F0DE53 /* Pods_Booster_KiwisaverUITests.framework in Frameworks */,
+				EFBE1FEDB9A38EBACA5D0199 /* Pods_Booster_KiwisaverUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +216,8 @@
 				20EACBC21E296A3800889CED /* Booster KiwisaverTests */,
 				20EACBCD1E296A3800889CED /* Booster KiwisaverUITests */,
 				20EACBAC1E296A3700889CED /* Products */,
-				6472FD563DAD3A953E309259 /* Pods */,
 				43FA6F5D688D6ABCF4527B3C /* Frameworks */,
+				233E3C8BCD5ED79CC71F143A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,28 +269,28 @@
 			path = "Booster KiwisaverUITests";
 			sourceTree = "<group>";
 		};
+		233E3C8BCD5ED79CC71F143A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C94429A4279635BF711B8A36 /* Pods-Booster Kiwisaver.debug.xcconfig */,
+				DB89329C3C50889CC129D0D8 /* Pods-Booster Kiwisaver.release.xcconfig */,
+				48ECB0A7F7F593D9233E2781 /* Pods-Booster KiwisaverTests.debug.xcconfig */,
+				C38CD264D9D52D27DFB75F27 /* Pods-Booster KiwisaverTests.release.xcconfig */,
+				580DB038771305778FF1FF39 /* Pods-Booster KiwisaverUITests.debug.xcconfig */,
+				F4C71C347135AAAA54D0D989 /* Pods-Booster KiwisaverUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		43FA6F5D688D6ABCF4527B3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				201837411E2B405500DB84F3 /* Charts.framework */,
-				3F02CF4EDF0501FA5D0C1B05 /* Pods_Booster_Kiwisaver.framework */,
-				5B8EEC4877E9DE32CC48FE90 /* Pods_Booster_KiwisaverTests.framework */,
-				99D8EC0077EC5F6D79D1702B /* Pods_Booster_KiwisaverUITests.framework */,
+				4F26F86A7F54CC72E8C5B100 /* Pods_Booster_Kiwisaver.framework */,
+				DE3A0BDD1928B9BC9D0FD5CB /* Pods_Booster_KiwisaverTests.framework */,
+				B756F1C78010C766032E98F5 /* Pods_Booster_KiwisaverUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6472FD563DAD3A953E309259 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2927F44E5BD900A5EAD10648 /* Pods-Booster Kiwisaver.debug.xcconfig */,
-				2B053CB505A086AA175447A1 /* Pods-Booster Kiwisaver.release.xcconfig */,
-				BCEC8F6E82EF4612A0955FB4 /* Pods-Booster KiwisaverTests.debug.xcconfig */,
-				BA2A462428AB4FAA13BD5834 /* Pods-Booster KiwisaverTests.release.xcconfig */,
-				AA291477A64D141B7A17EFE2 /* Pods-Booster KiwisaverUITests.debug.xcconfig */,
-				E7AD5DDA4906C7FF2787ABCB /* Pods-Booster KiwisaverUITests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,12 +300,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20EACBD31E296A3800889CED /* Build configuration list for PBXNativeTarget "Booster Kiwisaver" */;
 			buildPhases = (
-				4B3D9B9BE5D0BEEE09E25C00 /* [CP] Check Pods Manifest.lock */,
+				D2592AF13F17A229655498FC /* [CP] Check Pods Manifest.lock */,
 				20EACBA71E296A3700889CED /* Sources */,
 				20EACBA81E296A3700889CED /* Frameworks */,
 				20EACBA91E296A3700889CED /* Resources */,
-				A730C5AF68758CA28D3EBA4C /* [CP] Embed Pods Frameworks */,
-				37DDC79DF8313E1CD0857617 /* [CP] Copy Pods Resources */,
+				9A08976C35BCBE8EAED3C387 /* [CP] Embed Pods Frameworks */,
+				1055A9D57FEABCAF37049A4C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -320,12 +320,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20EACBD61E296A3800889CED /* Build configuration list for PBXNativeTarget "Booster KiwisaverTests" */;
 			buildPhases = (
-				AE2877CC835A72D92EF04F59 /* [CP] Check Pods Manifest.lock */,
+				AF717DC072F7E6842517E168 /* [CP] Check Pods Manifest.lock */,
 				20EACBBB1E296A3800889CED /* Sources */,
 				20EACBBC1E296A3800889CED /* Frameworks */,
 				20EACBBD1E296A3800889CED /* Resources */,
-				698C7A4C4B1344A59C8A139D /* [CP] Embed Pods Frameworks */,
-				6AD4A03D9F939DAA74A90954 /* [CP] Copy Pods Resources */,
+				BC281AED9CE81E4EAD4ADFFA /* [CP] Embed Pods Frameworks */,
+				AA30A866D8A0A422D67E0D99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,12 +341,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20EACBD91E296A3800889CED /* Build configuration list for PBXNativeTarget "Booster KiwisaverUITests" */;
 			buildPhases = (
-				E6C4901DC6BA1FA59ABC679D /* [CP] Check Pods Manifest.lock */,
+				DAD7D9F614998EDE204BFE80 /* [CP] Check Pods Manifest.lock */,
 				20EACBC61E296A3800889CED /* Sources */,
 				20EACBC71E296A3800889CED /* Frameworks */,
 				20EACBC81E296A3800889CED /* Resources */,
-				6639BC6440A588CA1E7BAD34 /* [CP] Embed Pods Frameworks */,
-				5245F02D03ADEA6E8821481E /* [CP] Copy Pods Resources */,
+				376DA1208EE2B2EA2CAA6B3A /* [CP] Embed Pods Frameworks */,
+				25A38A7E7F208043A208FC81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -438,7 +438,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		37DDC79DF8313E1CD0857617 /* [CP] Copy Pods Resources */ = {
+		1055A9D57FEABCAF37049A4C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,22 +453,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster Kiwisaver/Pods-Booster Kiwisaver-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4B3D9B9BE5D0BEEE09E25C00 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		5245F02D03ADEA6E8821481E /* [CP] Copy Pods Resources */ = {
+		25A38A7E7F208043A208FC81 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -483,7 +468,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster KiwisaverUITests/Pods-Booster KiwisaverUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6639BC6440A588CA1E7BAD34 /* [CP] Embed Pods Frameworks */ = {
+		376DA1208EE2B2EA2CAA6B3A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -498,37 +483,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster KiwisaverUITests/Pods-Booster KiwisaverUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		698C7A4C4B1344A59C8A139D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster KiwisaverTests/Pods-Booster KiwisaverTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6AD4A03D9F939DAA74A90954 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster KiwisaverTests/Pods-Booster KiwisaverTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A730C5AF68758CA28D3EBA4C /* [CP] Embed Pods Frameworks */ = {
+		9A08976C35BCBE8EAED3C387 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -543,7 +498,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster Kiwisaver/Pods-Booster Kiwisaver-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE2877CC835A72D92EF04F59 /* [CP] Check Pods Manifest.lock */ = {
+		AA30A866D8A0A422D67E0D99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster KiwisaverTests/Pods-Booster KiwisaverTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF717DC072F7E6842517E168 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -558,7 +528,37 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E6C4901DC6BA1FA59ABC679D /* [CP] Check Pods Manifest.lock */ = {
+		BC281AED9CE81E4EAD4ADFFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Booster KiwisaverTests/Pods-Booster KiwisaverTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2592AF13F17A229655498FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DAD7D9F614998EDE204BFE80 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -744,7 +744,7 @@
 		};
 		20EACBD41E296A3800889CED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2927F44E5BD900A5EAD10648 /* Pods-Booster Kiwisaver.debug.xcconfig */;
+			baseConfigurationReference = C94429A4279635BF711B8A36 /* Pods-Booster Kiwisaver.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -760,7 +760,7 @@
 		};
 		20EACBD51E296A3800889CED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B053CB505A086AA175447A1 /* Pods-Booster Kiwisaver.release.xcconfig */;
+			baseConfigurationReference = DB89329C3C50889CC129D0D8 /* Pods-Booster Kiwisaver.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -776,7 +776,7 @@
 		};
 		20EACBD71E296A3800889CED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCEC8F6E82EF4612A0955FB4 /* Pods-Booster KiwisaverTests.debug.xcconfig */;
+			baseConfigurationReference = 48ECB0A7F7F593D9233E2781 /* Pods-Booster KiwisaverTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -792,7 +792,7 @@
 		};
 		20EACBD81E296A3800889CED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA2A462428AB4FAA13BD5834 /* Pods-Booster KiwisaverTests.release.xcconfig */;
+			baseConfigurationReference = C38CD264D9D52D27DFB75F27 /* Pods-Booster KiwisaverTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -808,7 +808,7 @@
 		};
 		20EACBDA1E296A3800889CED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA291477A64D141B7A17EFE2 /* Pods-Booster KiwisaverUITests.debug.xcconfig */;
+			baseConfigurationReference = 580DB038771305778FF1FF39 /* Pods-Booster KiwisaverUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = Y9SN6QP8BV;
@@ -823,7 +823,7 @@
 		};
 		20EACBDB1E296A3800889CED /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7AD5DDA4906C7FF2787ABCB /* Pods-Booster KiwisaverUITests.release.xcconfig */;
+			baseConfigurationReference = F4C71C347135AAAA54D0D989 /* Pods-Booster KiwisaverUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = Y9SN6QP8BV;

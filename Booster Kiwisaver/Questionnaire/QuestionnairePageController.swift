@@ -25,6 +25,7 @@ class QuestionnairePageController: UIViewController, UIPageViewControllerDelegat
         questions = buildQuestions()
         
         pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+
         let content = viewcontrollerAt(index: 0)
         
         pageViewController.setViewControllers([content!], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
@@ -33,10 +34,16 @@ class QuestionnairePageController: UIViewController, UIPageViewControllerDelegat
         
         addChildViewController(pageViewController)
         containerView.addSubview(pageViewController.view)
+        
+        pageViewController?.view.frame = containerView.bounds
+        pageViewController?.view.layoutIfNeeded()
+        
         pageViewController.didMove(toParentViewController: self)
         
+        configureNextButton()
+        
         nextButton.clipsToBounds = true
-        nextButton.layer.borderColor = UIColor.boosterBlue().cgColor
+        nextButton.layer.borderColor = UIColor.verySoftGreen().cgColor
         nextButton.layer.borderWidth = 2
         nextButton.layer.cornerRadius = nextButton.frame.size.height / 2
     }
@@ -68,7 +75,7 @@ class QuestionnairePageController: UIViewController, UIPageViewControllerDelegat
         
         let vc:QuestionnaireContentController = storyboard?.instantiateViewController(withIdentifier: "QuestionnaireContentController") as! QuestionnaireContentController
         vc.pageIndex = index
-        
+        vc.pageViewController = self
         let question = questions[index]
         
         vc.question = question
@@ -77,7 +84,7 @@ class QuestionnairePageController: UIViewController, UIPageViewControllerDelegat
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        print("dsds")
+        
     }
     
     @IBAction func actionNextPage(_ sender: Any) {
@@ -94,14 +101,27 @@ class QuestionnairePageController: UIViewController, UIPageViewControllerDelegat
             
             return
         }
+        
         currentPageIndex += 1
         
         if let content = viewcontrollerAt(index:currentPageIndex) {
             pageViewController.setViewControllers([content], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
+            configureNextButton()
         }
         
         if currentPageIndex == questions.count {
             nextButton.setTitle("Show", for: UIControlState.normal)
+        }
+        
+    }
+    
+    func configureNextButton() {
+
+        if currentPageIndex >= questions.count {
+            nextButton.isEnabled = true
+        }else{
+            let question = questions[currentPageIndex]
+            nextButton.isEnabled = question.selectedAnswerIndex > -1
         }
     }
     
