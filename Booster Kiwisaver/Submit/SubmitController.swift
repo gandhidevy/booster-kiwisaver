@@ -84,7 +84,7 @@ class SubmitController: UIViewController, UITextFieldDelegate, MFMailComposeView
         
         let defaults = UserDefaults.standard
         
-        let msg:String = "Hello, \n These are my details and score: \nName: \(name) \nEmail: \(email) \nPhone: \(phone) \n\nMy score for the questionaire was: \(defaults.integer(forKey: "QuestionaireFinalScore"))"
+        let msg:String = "Hello, \n\nThese are my details and score: \nName: \(name) \nEmail: \(email) \nPhone: \(phone) \n\nMy score for the questionaire was: \(defaults.integer(forKey: "QuestionaireFinalScore"))"
         
         composeVC.setMessageBody(msg, isHTML: false)
         
