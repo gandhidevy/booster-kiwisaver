@@ -48,16 +48,17 @@ class QuestionnairePageController: UIViewController, UIPageViewControllerDelegat
         nextButton.layer.cornerRadius = nextButton.frame.size.height / 2
     }
     
-    //before
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         return nil
     }
-    
-    //after
+
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         return nil
     }
     
+    /**
+        Get viewcontroller at index
+     */
     func viewcontrollerAt(index:Int) -> UIViewController? {
         
         if index < 0 || index > questions.count {
@@ -87,6 +88,9 @@ class QuestionnairePageController: UIViewController, UIPageViewControllerDelegat
         
     }
     
+    /*
+        Action for when Next button is selected in the pager
+     */
     @IBAction func actionNextPage(_ sender: Any) {
         
         if currentPageIndex == questions.count {
@@ -115,6 +119,9 @@ class QuestionnairePageController: UIViewController, UIPageViewControllerDelegat
         
     }
     
+    /**
+        Call to validate if next button should be enabled. It is only enabled when the question in current page is selected, and when the questionaire is complete
+     */
     func configureNextButton() {
 
         if currentPageIndex >= questions.count {
@@ -125,7 +132,7 @@ class QuestionnairePageController: UIViewController, UIPageViewControllerDelegat
         }
     }
     
-    //BUild the data models
+    //Build the data models
     private func buildQuestions()->[BNZQuestion] {
         //Question 1
         let q1:BNZQuestion = BNZQuestion(text: "When do you plan to make a significant lump sum withdrawal from your portfolio, for example, for the purchase of a first home or for retirement needs? (From age 65 at the earliest)")

@@ -44,7 +44,7 @@ class MainController : UIViewController, UIMenuDelegate  {
     }
     
     /**
-     * Delect method called when a menu item has been selected
+     * Triggered when a menu item has been selected
      */
     func didSelectMenuItem(indexPath: IndexPath) {
         
@@ -61,9 +61,11 @@ class MainController : UIViewController, UIMenuDelegate  {
             default:
                 break
         }
-        
     }
     
+    /**
+     animate between container view between viewcontrollers
+     */
     func cycleFromViewController(toViewController newViewController: UIViewController) {
         
         currentView!.willMove(toParentViewController: nil)
@@ -83,7 +85,9 @@ class MainController : UIViewController, UIMenuDelegate  {
             newViewController.didMove(toParentViewController: self)
         })
     }
-    
+    /**
+        Display Questionaire view on the main viewcontroller
+     */
     func showQuestionaire(orSubmit submit:Bool) {
         
         var qViewController:UIViewController!
@@ -97,11 +101,17 @@ class MainController : UIViewController, UIMenuDelegate  {
         cycleFromViewController(toViewController: qViewController)
     }
     
+    /**
+     Display welcome view on the main view controller
+     */
     func showWelcome() {
         let controller = (storyboard?.instantiateViewController(withIdentifier: "MainWelcomeScreen"))!
         cycleFromViewController(toViewController: controller)
     }
     
+    /**
+        Display Investor detail view controller
+     */
     func showInvestor(type:InvestorType) {
         let fundController:InvestorFundController = UIStoryboard(name: "InvestorFund", bundle: nil).instantiateInitialViewController()! as! InvestorFundController
         

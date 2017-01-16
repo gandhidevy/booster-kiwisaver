@@ -39,6 +39,9 @@ class InvestorFundController: UIViewController {
         setChart(fund: fund)
     }
     
+    /**
+     Setup pie chart with data and styling pie chart
+     */
     func setChart(fund:SectorFund) {
         let assets = ["Cash and cash equivalents", "New Zealand fixed interest", "International fixed interest", "Australasian equities", "International equities", "Listed property"]
         let dataValues = [fund.cashAndCashEquivalents, fund.nzFixedInterest, fund.internationalFixedInterest, fund.australassianEquities, fund.internationalEquities, fund.listedProperty]
@@ -89,6 +92,9 @@ class InvestorFundController: UIViewController {
         pieChartView.setExtraOffsets(left: offset, top: 0, right: offset, bottom: 0)
     }
     
+    /**
+     Format UILabel for bullet point styling.
+    */
     func setFormattedDetails(string : String) {
         let attributedString = NSMutableAttributedString(string: string)
         let paragraphStyle = NSMutableParagraphStyle()

@@ -9,6 +9,10 @@
 import Foundation
 import UIKit
 
+/**
+ Orignially planned to create custom fonts to be used through the app, just as the BNZColor creates its colors
+ */
+
 extension UIFont {
     //all custom fonts
 }

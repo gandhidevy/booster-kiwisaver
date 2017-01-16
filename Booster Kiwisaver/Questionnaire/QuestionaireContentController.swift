@@ -14,7 +14,9 @@ class QuestionnaireContentController: UIViewController, UITableViewDelegate, UIT
     var pageIndex:Int!
     var pageViewController:QuestionnairePageController?
     var question:BNZQuestion?
-    
+
+    // MARK: - LifeCycle Methods
+
     override func viewDidLoad() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -29,6 +31,8 @@ class QuestionnaireContentController: UIViewController, UITableViewDelegate, UIT
         tableView.reloadData()
     }
     
+    // MARK: - UITableView Datasource & Delegate
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1 + (question?.possibleAnsers.count)!
     }
@@ -59,6 +63,28 @@ class QuestionnaireContentController: UIViewController, UITableViewDelegate, UIT
         return cell
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row > 0 {
+            let answerIndex:Int = indexPath.row - 1
+            let selected:Bool = question?.selectedAnswerIndex == answerIndex
+            cell.setSelected(selected, animated: true)
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if(indexPath.row > 0){
+            
+            if let currentSelected = question?.selectedAnswerIndex {
+                tableView.deselectRow(at: IndexPath(row: currentSelected, section: 0), animated: false)
+            }
+            
+            let selectedAnswerIndex:Int = indexPath.row - 1
+            question?.selectedAnswerIndex = selectedAnswerIndex
+            
+            tableView.selectRow(at: indexPath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
+        }
+    }
+    
     func actionSelectedAnswer(sender:UIButton) {
         let buttonPosition = sender.convert(CGPoint.zero, to: tableView)
         let indexPath = tableView.indexPathForRow(at: buttonPosition);
@@ -82,27 +108,4 @@ class QuestionnaireContentController: UIViewController, UITableViewDelegate, UIT
             }
         }
     }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row > 0 {
-            let answerIndex:Int = indexPath.row - 1
-            let selected:Bool = question?.selectedAnswerIndex == answerIndex
-            cell.setSelected(selected, animated: true)
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if(indexPath.row > 0){
-            
-            if let currentSelected = question?.selectedAnswerIndex {
-                tableView.deselectRow(at: IndexPath(row: currentSelected, section: 0), animated: false)
-            }
-            
-            let selectedAnswerIndex:Int = indexPath.row - 1
-            question?.selectedAnswerIndex = selectedAnswerIndex
-            
-            tableView.selectRow(at: indexPath, animated: true, scrollPosition: UITableViewScrollPosition.middle)
-        }
-    }
-    
 }

@@ -20,7 +20,6 @@ class SubmitController: UIViewController, UITextFieldDelegate, MFMailComposeView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         self.submitButton.clipsToBounds = true
         self.submitButton.layer.cornerRadius = 5
     }
@@ -69,7 +68,6 @@ class SubmitController: UIViewController, UITextFieldDelegate, MFMailComposeView
         }
         
         //Open email
-        
         if !MFMailComposeViewController.canSendMail() {
             print("Mail service unavailable")
             
@@ -104,6 +102,8 @@ class SubmitController: UIViewController, UITextFieldDelegate, MFMailComposeView
         self.present(alert, animated: true, completion: nil)
     }
     
+    // MARK: - Mail Methods
+    
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         
         controller.dismiss(animated: true, completion: nil)
@@ -126,8 +126,6 @@ class SubmitController: UIViewController, UITextFieldDelegate, MFMailComposeView
             
             self.present(alert, animated: true, completion: nil)
             
-            
-
             break
         default:
             break
