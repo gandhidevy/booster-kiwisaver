@@ -66,9 +66,27 @@ class QuestionnairePageController: UIViewController, UIPageViewControllerDelegat
         }
         
         if index == questions.count {
+            
+            //We have reached the end of the questionaire, save result and present the user final score
+            
             let vc:QuestionnaireResultController = storyboard?.instantiateViewController(withIdentifier: "QuestionnaireResultController") as! QuestionnaireResultController
             
-            vc.questionsResults = questions
+            var finalScore:Int = 0
+            
+            for q in questions {
+                let answer:BNZAnswer = q.possibleAnsers[q.selectedAnswerIndex] as BNZAnswer
+                finalScore+=answer.score
+            }
+            
+            //Save final score
+            let defaults = UserDefaults.standard
+            defaults.set(finalScore, forKey: "QuestionaireFinalScore")
+            defaults.synchronize()
+                        
+            let investorType:InvestorType = InvestorType.getInvestorTypeBaseOn(score: finalScore)!
+            
+            vc.finalScore = finalScore
+            vc.investorType = investorType
             
             return vc
         }

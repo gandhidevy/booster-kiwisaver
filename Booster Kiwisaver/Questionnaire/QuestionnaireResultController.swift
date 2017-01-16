@@ -14,19 +14,12 @@ class QuestionnaireResultController: UIViewController {
     @IBOutlet weak var investorTypeLabel: UILabel!
     
     var questionsResults:[BNZQuestion]?
+    var finalScore:Int!
+    var investorType:InvestorType!
     
     override func viewDidLoad() {
-    
-        var finalScore:Int = 0
         
-        for q in questionsResults! {
-            let answer:BNZAnswer = q.possibleAnsers[q.selectedAnswerIndex] as BNZAnswer
-            finalScore+=answer.score
-        }
-        
-        scoreLabel.text = "\(finalScore)"
-        
-        let investorType:InvestorType = InvestorType.getInvestorTypeBaseOn(score: finalScore)!
+        scoreLabel.text = "\(finalScore!)"
         
         let smallHeader = [NSForegroundColorAttributeName : UIColor.black, NSFontAttributeName : UIFont.systemFont(ofSize: 18)]
         let largeHeader = [NSForegroundColorAttributeName : UIColor.black, NSFontAttributeName : UIFont.systemFont(ofSize: 26)]
@@ -36,10 +29,6 @@ class QuestionnaireResultController: UIViewController {
         attrString.append(NSAttributedString(string: "investor", attributes: smallHeader))
         
         investorTypeLabel.attributedText = attrString
-    
-        let defaults = UserDefaults.standard
-        defaults.set(finalScore, forKey: "QuestionaireFinalScore")
-        defaults.synchronize()
     }
     
 }
