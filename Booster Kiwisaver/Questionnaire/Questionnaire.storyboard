@@ -173,23 +173,23 @@ or for retirement needs? (From age 65 at the earliest)</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Total Score is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPo-7Z-3sn">
-                                <rect key="frame" x="26" y="222.5" width="323" height="31.5"/>
+                                <rect key="frame" x="26" y="172.5" width="323" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3E-EO-O18">
-                                <rect key="frame" x="116" y="262" width="143" height="143"/>
+                                <rect key="frame" x="116" y="212" width="143" height="143"/>
                                 <color key="backgroundColor" red="0.062745098040000002" green="0.59999999999999998" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="u3E-EO-O18" secondAttribute="height" multiplier="1:1" id="dDr-jF-F0R"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are a &quot;Balanced&quot; investor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHr-dx-Uvr">
-                                <rect key="frame" x="20" y="415" width="335" height="29"/>
+                                <rect key="frame" x="20" y="365" width="335" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -202,7 +202,7 @@ or for retirement needs? (From age 65 at the earliest)</string>
                             <constraint firstAttribute="trailingMargin" secondItem="TPo-7Z-3sn" secondAttribute="trailing" constant="10" id="Qi9-OX-mTy"/>
                             <constraint firstItem="TPo-7Z-3sn" firstAttribute="leading" secondItem="92z-XX-2Dq" secondAttribute="leadingMargin" constant="10" id="TrR-rg-jDV"/>
                             <constraint firstAttribute="trailing" secondItem="uHr-dx-Uvr" secondAttribute="trailing" constant="20" id="l8N-aF-Iex"/>
-                            <constraint firstItem="u3E-EO-O18" firstAttribute="centerY" secondItem="92z-XX-2Dq" secondAttribute="centerY" id="o5N-cp-lr9"/>
+                            <constraint firstItem="u3E-EO-O18" firstAttribute="centerY" secondItem="92z-XX-2Dq" secondAttribute="centerY" constant="-50" id="o5N-cp-lr9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="u3E-EO-O18" secondAttribute="trailing" constant="100" id="opN-ah-w4U"/>
                             <constraint firstItem="uHr-dx-Uvr" firstAttribute="leading" secondItem="92z-XX-2Dq" secondAttribute="leading" constant="20" id="qlm-le-ujq"/>
                             <constraint firstItem="uHr-dx-Uvr" firstAttribute="top" secondItem="u3E-EO-O18" secondAttribute="bottom" constant="10" id="yan-Gu-G3c"/>

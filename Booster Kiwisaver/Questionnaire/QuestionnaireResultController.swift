@@ -28,14 +28,11 @@ class QuestionnaireResultController: UIViewController {
         
         let investorType:InvestorType = InvestorType.getInvestorTypeBaseOn(score: finalScore)!
         
-//        investorTypeLabel.text = "You are a \"\(investorType.name)\" investor"
-        
         let smallHeader = [NSForegroundColorAttributeName : UIColor.black, NSFontAttributeName : UIFont.systemFont(ofSize: 18)]
         let largeHeader = [NSForegroundColorAttributeName : UIColor.black, NSFontAttributeName : UIFont.systemFont(ofSize: 26)]
         
-        
         let attrString:NSMutableAttributedString = NSMutableAttributedString(string: "You are a", attributes: smallHeader)
-        attrString.append(NSAttributedString(string: " \(investorType.name) ", attributes: largeHeader))
+        attrString.append(NSAttributedString(string: "\n\(investorType.name)\n", attributes: largeHeader))
         attrString.append(NSAttributedString(string: "investor", attributes: smallHeader))
         
         investorTypeLabel.attributedText = attrString

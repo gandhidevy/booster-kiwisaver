@@ -20,6 +20,8 @@ class MenuController: UITableViewController {
     
     var menuItems = [Array<String>]()
     
+    // MARK: - LifeCycle Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,7 +31,7 @@ class MenuController: UITableViewController {
         self.navigationItem.titleView = imageView
         
         menuItems = [
-            ["Welcome"],
+            ["Welcome!"],
             InvestorType.getAllInvestorTypesStringValues(),
             ["Begin",]
         ]
@@ -44,7 +46,7 @@ class MenuController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
-    
+    // MARK: - UITableView Datasource & Delegate
     override func numberOfSections(in tableView: UITableView) -> Int {
         return menuItems.count
     }
