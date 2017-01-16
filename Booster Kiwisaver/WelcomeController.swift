@@ -16,7 +16,7 @@ class WelcomeController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //style welcom button
+        //style welcome button
         welcomeButton.layer.cornerRadius = 5
         welcomeButton.layer.borderWidth = 1
         welcomeButton.layer.borderColor = UIColor.boosterBlue().cgColor

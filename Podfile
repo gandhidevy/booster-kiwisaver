@@ -5,8 +5,8 @@ use_frameworks!
 
 def podsToInstall
     inherit! :search_paths
-    pod 'SideMenu'
-    pod 'Charts'
+    pod 'SideMenu', '~>2.1.5'
+    pod 'Charts', '~>3.0.1'
 end
 
 target 'Booster Kiwisaver' do
