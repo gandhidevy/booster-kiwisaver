@@ -37,7 +37,7 @@ class MenuController: UITableViewController {
         ]
     
         if MenuController.isReadyToSubmit() {
-            menuItems[2][0] = "Submit"
+            menuItems[2].append("Submit")
         }
         
         tableView.tableFooterView = UIView()

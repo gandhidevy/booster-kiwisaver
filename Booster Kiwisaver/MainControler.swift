@@ -57,7 +57,7 @@ class MainController : UIViewController, UIMenuDelegate  {
                 return showInvestor(type: InvestorType.getAllInvestorTypes()[indexPath.row])
             //Load questionaire or submit screen
             case 2:
-                return showQuestionaire(orSubmit: MenuController.isReadyToSubmit())
+                return showQuestionaire(orSubmit:(indexPath.row == 1))
             default:
                 break
         }
