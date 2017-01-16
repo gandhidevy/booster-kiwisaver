@@ -13,6 +13,9 @@ This is simple application to give an overview of Boosters Kiwisaver Investment 
 * Displays Investor types
 * Functional Questionaire, that can also be submitted via email
 
+#### Incomplete Feature
+* Sadly I did not have enough spare time to implement the ability to jump to another question/end the questionaire early depending on answers given by the user, bu this fnctionaility could be implemented wwithin the action 'next' button, as the next question to display is determined there.
+
 #### Notes:
 * While working out the navigation flow for the questionaire, I was uncertain if a user should be able to go back and forward to question, so i decided to to mimic the wireframes and only have a next button.
 * Another feature I think that would improve UX, if once they tap an answer it takes them to the next question, only if the user is able to go back and forward questions, or else users would not be able to assess if their choice was the correct one.
